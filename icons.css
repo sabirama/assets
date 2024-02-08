@@ -109,68 +109,74 @@
     content: url(./assets/icons/desktop.svg);
 }
 .eye {
-    content: url(./assets//icons/eye.svg);
+    content: url(./assets/icons/eye.svg);
 }
 .folder {
-    content: url(./assets//icons/folder.svg);
+    content: url(./assets/icons/folder.svg);
 }
 .food {
-    content: url(./assets//icons/food.svg);
+    content: url(./assets/icons/food.svg);
 }
 .full-screen {
-    content: url(./assets//icons/full-screen.svg);
+    content: url(./assets/icons/full-screen.svg);
 }
 .menu-grid {
-    content: url(./assets//icons/grid_menu.svg);
+    content: url(./assets/icons/grid_menu.svg);
 }
 .menu-hamburder {
-    content: url(./assets//icons/hamburder_menu.svg);
+    content: url(./assets/icons/hamburder_menu.svg);
 }
 .menu-kebab {
-    content: url(./assets//icons//kebab_icon.svg);
+    content: url(./assets/icons//kebab_icon.svg);
 }
 .lock {
-    content: url(./assets//icons/lock.svg);
+    content: url(./assets/icons/lock.svg);
 }
 .power {
-    content: url(./assets//icons/power.svg);
+    content: url(./assets/icons/power.svg);
 }
 .read {
-    content: url(./assets//icons/read.svg);
+    content: url(./assets/icons/read.svg);
 }
 .search {
-    content: url(./assets//icons/search.svg);
+    content: url(./assets/icons/search.svg);
 }
 .sleep {
-    content: url(./assets//icons/sleep.svg);
+    content: url(./assets/icons/sleep.svg);
 }
 .unlock {
-    content: url(./assets//icons/unlock.svg);
+    content: url(./assets/icons/unlock.svg);
 }
 .x-close {
-    content: url(./assets//icons/x-close.svg);
+    content: url(./assets/icons/x-close.svg);
 }
 .music {
-    content: url(./assets//icons/music.svg);
+    content: url(./assets/icons/music.svg);
 }
 .mobile {
-    content: url(./assets//icons/mobile.svg);
+    content: url(./assets/icons/mobile.svg);
 }
 .phone {
-    content: url(./assets//icons/phone.svg);
+    content: url(./assets/icons/phone.svg);
 }
 .mute {
-    content: url(./assets//icons/mute.svg);
+    content: url(./assets/icons/mute.svg);
 }
 .next {
-    content: url(./assets//icons/next.svg);
+    content: url(./assets/icons/next.svg);
 }
 .prev {
-    content: url(./assets//icons/prev.svg);
+    content: url(./assets/icons/prev.svg);
 }
 .play {
-    content: url(./assets//icons/play.svg);
+    content: url(./assets/icons/play.svg);
 }
 .reload {
-    content: url(./assets//icons/reload.svg);
+    content: url(./assets/icons/reload.svg);
+}
+.cloud-upload {
+    content: url(./assets/icons/cloud-upload.svg);
+}
+.cloud-download {
+    content: url(./assets/icons/cload-download.svg);
 }
