@@ -1,0 +1,21 @@
+body {
+    background: black;color:white;
+}
+main {
+    padding: 48px;
+}
+.color-container {
+    display:flex;flex-wrap:wrap;gap:12px;margin:16px;color: black;
+}
+.color-container span {
+    padding:8px;color:black;width:80px;text-align:center;
+}
+.icon-container {
+    display:flex;flex-wrap:wrap;background:gray;padding:8px 16px;
+}
+.icon-container span {
+    padding:8px;margin:8px;display:flex;flex-wrap:wrap;width:120px;align-items:center;border:2px solid black;
+}
+.icon-container span img {
+    height:24px;margin: 4px 4px;
+}
