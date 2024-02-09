@@ -34,6 +34,9 @@ icon.gray {
 icon.gold {
     filter: invert(83%) sepia(53%) saturate(2612%) hue-rotate(1deg) brightness(105%) contrast(105%);
 }
+icon.silver {
+    filter: invert(84%) sepia(0%) saturate(535%) hue-rotate(258deg) brightness(96%) contrast(84%);
+}
 
 /* icons */
 icon.angular {
@@ -242,4 +245,25 @@ icon.nextjs {
 }
 icon.user {
     content: url(./assets/icons/user.svg);
+}
+icon.service {
+    content: url(./assets/icons/user.svg);
+}
+icon.tag {
+    content: url(./assets/icons/tag.svg);
+}
+icon.discount {
+    content: url(./assets/icons/discount.svg);
+}
+icon.camera {
+    content: url(./assets/icons/camera.svg);
+}
+icon.video {
+    content: url(./assets/icons/video.svg);
+}
+icon.beverage {
+    content: url(./assets/icons/beverage.svg);
+}
+icon.pause {
+    content: url(./assets/icons/pause.svg);
 }
