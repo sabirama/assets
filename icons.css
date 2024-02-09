@@ -1,182 +1,230 @@
-.icon {
-  height: 24px;
-  width: 24px;
-}
-.m-icon {
+icon.m {
  height: 48px;
- width: 48px;   
+ width: auto;
 }
-.angular {
+
+/* colors */
+icon.white {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(136deg) brightness(106%) contrast(101%);
+}
+icon.red {
+    filter: invert(19%) sepia(69%) saturate(7390%) hue-rotate(356deg) brightness(96%) contrast(116%);
+}
+icon.green {
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
+icon.blue {
+    filter: invert(10%) sepia(100%) saturate(5370%) hue-rotate(244deg) brightness(99%) contrast(152%);
+}
+icon.yellow {
+    filter: invert(97%) sepia(36%) saturate(6555%) hue-rotate(357deg) brightness(104%) contrast(104%);
+}
+icon.orange {
+    filter: invert(64%) sepia(51%) saturate(3051%) hue-rotate(2deg) brightness(107%) contrast(108%);
+}
+icon.purple {
+    filter: invert(15%) sepia(51%) saturate(5584%) hue-rotate(290deg) brightness(78%) contrast(127%);
+}
+icon.brown {
+    filter: invert(18%) sepia(46%) saturate(2615%) hue-rotate(336deg) brightness(116%) contrast(96%);
+}
+icon.gray {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(360deg) brightness(100%) contrast(100%);
+}
+icon.gold {
+    filter: invert(83%) sepia(53%) saturate(2612%) hue-rotate(1deg) brightness(105%) contrast(105%);
+}
+
+/* icons */
+icon.angular {
   content: url(./assets/icons/angular.svg);
 }
-.api {
+icon.api {
   content: url(./assets/icons/api.svg);
 }
-.css {
+icon.css {
   content: url(./assets/icons/css.svg);
 }
-.database {
+icon.database {
   content: url(./assets/icons/database.svg);
 }
-.discord {
+icon.discord {
   content: url(./assets/icons/discord.svg);
 }
-.facebook {
+icon.facebook {
   content: url(./assets/icons/facebook.svg);
 }
-.g-drive {
+icon.gdrive {
   content: url(./assets/icons/gdrive.svg);
 }
-.c-g-drive {
-  content: url(./assets/icons/gdrive_colored.svg);
-}
-.github {
+icon.github {
   content: url(./assets/icons/github.svg);
 }
-.google {
+icon.google {
   content: url(./assets/icons/google.svg);
 }
-.html {
+icon.html {
     content: url(./assets/icons/html.svg);
 }
-.instagram {
+icon.instagram {
     content: url(./assets/icons/instagram.svg);
 }
-.javascript {
+icon.javascript {
     content: url(./assets/icons/javascript.svg);
 }
-.laravel {
+icon.laravel {
     content: url(./assets/icons/laravel.svg);
 }
-.linkedin {
+icon.linkedin {
     content: url(./assets/icons/linkedin.svg);
 }
-.mail {
+icon.mail {
     content: url(./assets/icons/mail.svg);
 }
-.messenger {
+icon.messenger {
     content: url(./assets/icons/messenger.svg);
 }
-.nodejs {
+icon.nodejs {
     content: url(./assets/icons/nodejs.svg);
 }
-.patreon {
+icon.patreon {
     content: url(./assets/icons/patreon.svg);
 }
-.php {
+icon.php {
     content: url(./assets/icons/php.svg);
 }
-.playstore {
+icon.playstore {
     content: url(./assets/icons/playstore.svg);
 }
-.postman {
+icon.postman {
     content: url(./assets/icons/postman.svg);
 }
-.reactjs {
+icon.reactjs {
     content: url(./assets/icons/reactjs.svg);
 }
-.stack-overflow {
+icon.stack-overflow {
     content: url(./assets/icons/stack-overflow.svg);
 }
-.steam {
+icon.steam {
     content: url(./assets/icons/steam.svg);
 }
-.telegram {
+icon.telegram {
     content: url(./assets/icons/telegram.svg);
 }
-.tiktok {
+icon.tiktok {
     content: url(./assets/icons/tiktok.svg);
 }
-.unity {
-    content: url(./assets/icons/unity_game_engine.svg);
+icon.unity {
+    content: url(./assets/icons/unity.svg);
 }
-.upwork {
+icon.upwork {
     content: url(./assets/icons/upwork.svg);
 }
-.whatsapp {
+icon.whatsapp {
     content: url(./assets/icons/whatsapp.svg);
 }
-.tolink {
+icon.at-symbol {
     content: url(./assets/icons/@.svg);
 }
-.calendar {
+icon.calendar {
     content: url(./assets/icons/calendar.svg);
 }
-.code {
+icon.code {
     content: url(./assets/icons/code.svg);
 }
-.desktop {
+icon.desktop {
     content: url(./assets/icons/desktop.svg);
 }
-.eye {
+icon.eye {
     content: url(./assets/icons/eye.svg);
 }
-.folder {
+icon.eye-hidden {
+    content: url(./assets/icons/eye-hidden.svg);
+}
+icon.folder {
     content: url(./assets/icons/folder.svg);
 }
-.food {
+icon.food {
     content: url(./assets/icons/food.svg);
 }
-.full-screen {
+icon.full-screen {
     content: url(./assets/icons/full-screen.svg);
 }
-.menu-grid {
+icon.menu-grid {
     content: url(./assets/icons/grid_menu.svg);
 }
-.menu-hamburder {
-    content: url(./assets/icons/hamburder_menu.svg);
+icon.menu-hamburger {
+    content: url(./assets/icons/hamburger_menu.svg);
 }
-.menu-kebab {
+icon.menu-kebab {
     content: url(./assets/icons//kebab_icon.svg);
 }
-.lock {
+icon.lock {
     content: url(./assets/icons/lock.svg);
 }
-.power {
+icon.power {
     content: url(./assets/icons/power.svg);
 }
-.read {
+icon.read {
     content: url(./assets/icons/read.svg);
 }
-.search {
+icon.search {
     content: url(./assets/icons/search.svg);
 }
-.sleep {
+icon.sleep {
     content: url(./assets/icons/sleep.svg);
 }
-.unlock {
+icon.unlock {
     content: url(./assets/icons/unlock.svg);
 }
-.x-close {
+icon.x-close {
     content: url(./assets/icons/x-close.svg);
 }
-.music {
+icon.music {
     content: url(./assets/icons/music.svg);
 }
-.mobile {
+icon.mobile {
     content: url(./assets/icons/mobile.svg);
 }
-.phone {
+icon.phone {
     content: url(./assets/icons/phone.svg);
 }
-.mute {
+icon.mute {
     content: url(./assets/icons/mute.svg);
 }
-.next {
+icon.next {
     content: url(./assets/icons/next.svg);
 }
-.prev {
+icon.prev {
     content: url(./assets/icons/prev.svg);
 }
-.play {
+icon.play {
     content: url(./assets/icons/play.svg);
 }
-.reload {
+icon.reload {
     content: url(./assets/icons/reload.svg);
 }
-.cloud-upload {
+icon.cloud-upload {
     content: url(./assets/icons/cloud-upload.svg);
 }
-.cloud-download {
-    content: url(./assets/icons/cload-download.svg);
+icon.cloud-download {
+    content: url(./assets/icons/cloud-download.svg);
+}
+icon.home {
+    content: url(./assets/icons/home.svg);
+}
+icon.apple {
+    content: url(./assets/icons/apple.svg);
+}
+icon.android {
+    content: url(./assets/icons/android.svg);
+}
+icon.chrome {
+    content: url(./assets/icons/chrome.svg);
+}
+icon.firefox {
+    content: url(./assets/icons/firefox.svg);
+}
+icon.info {
+    content: url(./assets/icons/info.svg);
 }

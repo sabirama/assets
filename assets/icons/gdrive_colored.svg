@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?> <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M98 452L334 60H178L30 328L98 452Z" fill="#10B766"/>
-<path d="M482 328H30L98 452H414L482 328Z" fill="#4285F4"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M172.653 328L98 452L30 328H172.653Z" fill="#0363D0"/>
-<path d="M414 452L178 60H334L482 328L414 452Z" fill="#FFBC00"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M339.344 328L413.997 452L481.997 328H339.344Z" fill="#DB4437"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M178 60L256 189.559L334 60H178Z" fill="#00832D"/>
-</svg>
