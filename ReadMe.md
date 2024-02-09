@@ -16,13 +16,13 @@ Available sizes:
 Available colors:
 
 <div class="color-container">
-<style>
-    .icon {height:24px;padding:0 8px}
-    .color-container {display:flex;flex-wrap:wrap;gap:12px;margin:16px;}
-    .color-container span {padding:8px;color:black;width:80px;text-align:center;} 
-    .icon-container {display:flex;background:gray;padding-left:16px;padding:top:8px;}
-    .icon-container span {padding:8px;display:flex;flex-wrap:wrap;width:100px;align-items:center;border:2px solid black;}
-</style>
+    <style>
+        .icon {height:24px;padding:0 8px}
+        .color-container {display:flex;flex-wrap:wrap;gap:12px;margin:16px;}
+        .color-container span {padding:8px;color:black;width:80px;text-align:center;} 
+        .icon-container {display:flex;background:gray;padding-left:16px;padding:top:8px;}
+        .icon-container span {padding:8px;display:flex;flex-wrap:wrap;width:100px;align-items:center;border:2px solid black;}
+    </style>
     <span style="background:#FFFFFF;">white</span>
     <span style="background:#FF0000;">red</span>
     <span style="background:#008000;">green</span>
