@@ -10,369 +10,585 @@
 </head>
 
 <body>
-
+  <aside>
+    Navigate to:
+    <a href="#" class="top">Top</a>
+    <ul>
+      Icons
+      <li><a href="#sizes">Sizes</a></li>
+      <li><a href="#colors">Colors</a></li>
+      <li><a href="#icons">Icons</a></li>
+    </ul>
+  </aside>
   <main>
     <div>
-      <h1>Documentation</h1>
+      <h1>Web Dev Assets Documentation</h1>
       <span>
-        <p></p>
+        <p>Repository:</p>
         <a href="https://github.com/sabirama/assets/tree/master">https://github.com/sabirama/assets/tree/master</a>
       </span>
-      <p> Put to your html file &lt;link rel="stylesheet" href="https://sabirama.github.io/assets/icons.css" &gt; </p>
-      <p>or the minified version &lt;link rel="stylesheet" href="https://sabirama.github.io/assets/icons-mini.css" &gt;</p>
+      <p> Put into your html file &lt;link rel="stylesheet" href="https://sabirama.github.io/assets/icons.css" &gt; </p>
+      <p>or the minified version &lt;link rel="stylesheet" href="https://sabirama.github.io/assets/icons-mini.css" &gt;
+      </p>
     </div>
     <br>
-    Create an element with icon tag.
-    There are three types of classes in this project: size, color and icon-name which you can use to edit your element
+    Create an element with i tag.
+    There are three types of classes in thicons project: size, color and i-name which you can use to edit your element
     by adding those to the classes.
 
     <div>
       <p> sample: </p>
-      &lt;icon class="{icon-name} {size} {color}"&gt;&lt;/icon&gt;
+      &lt;i class="{icon-name} {size} {color} hover-{color}"&gt;&lt;/i&gt;
 
-      <p>Available sizes:</p>
+      <p id="sizes">Available sizes:</p>
 
       <ul>
-        <li>default = 24px x 24px</li>
-        <li>m-icon = 48px x 48px</li>
+        <li>default = 24px height</li>
+        <li>s-icon = 16px height</li>
+        <li>m-icon = 32px height</li>
+        <li>l-icon = 40px height</li>
+        <li>xl-icon = 48px height</li>
       </ul>
 
     </div>
 
-    <p> Colors:</p>
+    <p id="colors"> Colors:</p>
     <div class="color-container">
       <span style="background:#FFFFFF;">white</span>
+      <span style="background:#ffC0CB;">pink</span>
       <span style="background:#FF0000;">red</span>
       <span style="background:#008000;">green</span>
+      <span style="background:#228B22;">forest</span>
+      <span style="background:#00FFFF;">cyan</span>
       <span style="background:#0000FF;">blue</span>
+      <span style="background:#000080;">navy</span>
       <span style="background:#FFFF00;">yellow</span>
+      <span style="background:#FFD700;">gold</span>
       <span style="background:#FFA500;">orange</span>
       <span style="background:#800080;">purple</span>
+      <span style="background:#4B0082;">indigo</span>
       <span style="background:#A52A2A;">brown</span>
       <span style="background:#808080;">gray</span>
       <span style="background:#C0C0C0;">silver</span>
-      <span style="background:#FFD700;">gold</span>
     </div>
-
+    
+    <p>Change color when hovering over an icon by adding a hover-{color of choice} into the class.</p>
+    
     <p>You can create a new color class using the css filter property.
       Try going to https://codepen.io/sosuke/pen/Pjoqqp and put the hexcode of the color of your choice then take the
       filter into your color class.</p>
-    <p>NOTE: it is better to use the color type only to black icons.</p>
+    <p>NOTE: it icons better to use the color type only to black icons.</p>
 
-    <h3>ICONS and LOGOS</h3>
-    <div class="icon-container">
+    <h3 id="icons">iCONS and LOGOS</h3>
+    <div class="i-container">
+     
       <span>
-        <img class="icon" src="./assets/icons/html.svg"></img>
+        <img class="i" src="./assets/icons/html.svg"></img>
         html
       </span>
       <span>
-        <img class="icon" src="./assets/icons/css.svg"></img>
+        <img class="i" src="./assets/icons/css.svg"></img>
         css
       </span>
       <span>
-        <img class="icon" src="./assets/icons/javascript.svg"></img>
+        <img class="i" src="./assets/icons/javascript.svg"></img>
         javascript
       </span>
       <span>
-        <img class="icon" src="./assets/icons/php.svg"></img>
+        <img class="i" src="./assets/icons/php.svg"></img>
         php
       </span>
       <span>
-        <img class="icon" src="./assets/icons/angular.svg"></img>
+        <img class="i" src="./assets/icons/angular.svg"></img>
         angular
       </span>
       <span>
-        <img class="icon" src="./assets/icons/reactjs.svg"></img>
+        <img class="i" src="./assets/icons/reactjs.svg"></img>
         reactjs
       </span>
       <span>
-        <img class="icon" src="./assets/icons/nextjs.svg"></img>
+        <img class="i" src="./assets/icons/nextjs.svg"></img>
         nextjs
       </span>
       <span>
-        <img class="icon" src="./assets/icons/nodejs.svg"></img>
+        <img class="i" src="./assets/icons/nodejs.svg"></img>
         nodejs
       </span>
       <span>
-        <img class="icon" src="./assets/icons/laravel.svg"></img>
+        <img class="i" src="./assets/icons/laravel.svg"></img>
         laravel
       </span>
       <span>
-        <img class="icon" src="./assets/icons/postman.svg"></img>
+        <img class="i" src="./assets/icons/postman.svg"></img>
         postman
       </span>
       <span>
-        <img class="icon" src="./assets/icons/database.svg"></img>
+        <img class="i" src="./assets/icons/database.svg"></img>
         database
       </span>
       <span>
-        <img class="icon" src="./assets/icons/firefox.svg"></img>
+        <img class="i" src="./assets/icons/firefox.svg"></img>
         firefox
       </span>
       <span>
-        <img class="icon" src="./assets/icons/opera.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/opera.svg"></img>
         opera
       </span>
       <span>
-        <img class="icon" src="./assets/icons/chrome.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/chrome.svg"></img>
         chrome
       </span>
       <span>
-        <img class="icon" src="./assets/icons/gdrive.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/gdrive.svg"></img>
         gdrive
       </span>
       <span>
-        <img class="icon" src="./assets/icons/unity.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/unity.svg"></img>
         unity
       </span>
       <span>
-        <img class="icon" src="./assets/icons/playstore.svg" style="height:24px;margin: 4px 4px;"> </img>
+        <img class="i" src="./assets/icons/playstore.svg"> </img>
         playstore
       </span>
       <span>
-        <img class="icon" src="./assets/icons/google.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/google.svg"></img>
         google
       </span>
       <span>
-        <img class="icon" src="./assets/icons/upwork.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/upwork.svg"></img>
         upwork
       </span>
       <span>
-        <img class="icon" src="./assets/icons/steam.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/steam.svg"></img>
         steam
       </span>
       <span>
-        <img class="icon" src="./assets/icons/patreon.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/patreon.svg"></img>
         patreon
       </span>
       <span>
-        <img class="icon" src="./assets/icons/discord.svg" style="height:24px;margin: 4px 4px;"></img>
-        discord
+        <img class="i" src="./assets/icons/diconscord.svg"></img>
+        diconscord
       </span>
       <span>
-        <img class="icon" src="./assets/icons/stack-overflow.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/stack-overflow.svg"></img>
         stack
       </span>
       <span>
-        <img class="icon" src="./assets/icons/youtube.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/youtube.svg"></img>
         youtube
       </span>
       <span>
-        <img class="icon" src="./assets/icons/facebook.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/facebook.svg"></img>
         facebook
       </span>
       <span>
-        <img class="icon" src="./assets/icons/messenger.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/messenger.svg"></img>
         messenger
       </span>
       <span>
-        <img class="icon" src="./assets/icons/instagram.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/instagram.svg"></img>
         instagram
       </span>
       <span>
-        <img class="icon" src="./assets/icons/linkedin.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/linkedin.svg"></img>
         linkedin
       </span>
       <span>
-        <img class="icon" src="./assets/icons/telegram.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/telegram.svg"></img>
         telegram
       </span>
       <span>
-        <img class="icon" src="./assets/icons/tiktok.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/tiktok.svg"></img>
         tiktok
       </span>
       <span>
-        <img class="icon" src="./assets/icons/whatsapp.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/whatsapp.svg"></img>
         whatsapp
       </span>
       <span>
-        <img class="icon" src="./assets/icons/github.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/github.svg"></img>
         github
       </span>
       <span>
-        <img class="icon" src="./assets/icons/android.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/android.svg"></img>
         android
       </span>
       <span>
-        <img class="icon" src="./assets/icons/apple.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/apple.svg"></img>
         apple
       </span>
       <span>
-        <img class="icon" src="./assets/icons/@.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/@.svg"></img>
         at-symbol
       </span>
       <span>
-        <img class="icon" src="./assets/icons/api.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/api.svg"></img>
         api
       </span>
       <span>
-        <img class="icon" src="./assets/icons/calendar.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/calendar.svg"></img>
         calendar
       </span>
       <span>
-        <img class="icon" src="./assets/icons/cloud-download.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/cloud-download.svg"></img>
         cloud-dload
       </span>
       <span>
-        <img class="icon" src="./assets/icons/cloud-upload.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/cloud-upload.svg"></img>
         cloud-upload
       </span>
       <span>
-        <img class="icon" src="./assets/icons/code.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/code.svg"></img>
         code
       </span>
       <span>
-        <img class="icon" src="./assets/icons/desktop.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/desktop.svg"></img>
         desktop
       </span>
       <span>
-        <img class="icon" src="./assets/icons/eye.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/eye.svg"></img>
         eye
       </span>
       <span>
-        <img class="icon" src="./assets/icons/eye-hidden.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/eye-hidden.svg"></img>
         eye-hidden
       </span>
       <span>
-        <img class="icon" src="./assets/icons/folder.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/folder.svg"></img>
         folder
       </span>
       <span>
-        <img class="icon" src="./assets/icons/food.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/food.svg"></img>
         food
       </span>
       <span>
-        <img class="icon" src="./assets/icons/beverage.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/beverage.svg"></img>
         beverage
       </span>
       <span>
-        <img class="icon" src="./assets/icons/full-screen.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/full-screen.svg"></img>
         full-screen
       </span>
       <span>
-        <img class="icon" src="./assets/icons/grid_menu.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/menu-grid.svg"></img>
         menu-grid
       </span>
       <span>
-        <img class="icon" src="./assets/icons/hamburger_menu.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/menu-hamburger.svg"></img>
         menu-burger
       </span>
       <span>
-        <img class="icon" src="./assets/icons/kebab_icon.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/menu-kebab.svg"></img>
         menu-kebab
       </span>
       <span>
-        <img class="icon" src="./assets/icons/home.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/layer.svg"></img>
+        layer
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/print.svg"></img>
+        print
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/key.svg"></img>
+        key
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/link.svg"></img>
+        link
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/share.svg"></img>
+        share
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/list.svg"></img>
+        list
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/crop.svg"></img>
+        crop
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/home.svg"></img>
         home
       </span>
       <span>
-        <img class="icon" src="./assets/icons/info.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/info.svg"></img>
         info
       </span>
       <span>
-        <img class="icon" src="./assets/icons/lock.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/lock.svg"></img>
         lock
       </span>
       <span>
-        <img class="icon" src="./assets/icons/unlock.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/unlock.svg"></img>
         unlock
       </span>
       <span>
-        <img class="icon" src="./assets/icons/mail.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/mail.svg"></img>
         mail
       </span>
       <span>
-        <img class="icon" src="./assets/icons/mobile.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/mobile.svg"></img>
         mobile
       </span>
       <span>
-        <img class="icon" src="./assets/icons/music.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/music.svg"></img>
         music
       </span>
       <span>
-        <img class="icon" src="./assets/icons/mute.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/mute.svg"></img>
         mute
       </span>
       <span>
-        <img class="icon" src="./assets/icons/play.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/shuffle.svg"></img>
+        shuffle
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/play.svg"></img>
         play
       </span>
       <span>
-        <img class="icon" src="./assets/icons/pause.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/pause.svg"></img>
         pause
       </span>
       <span>
-        <img class="icon" src="./assets/icons/reload.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/stop.svg"></img>
+        stop
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/reload.svg"></img>
         reload
       </span>
       <span>
-        <img class="icon" src="./assets/icons/next.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/next.svg"></img>
         next
       </span>
       <span>
-        <img class="icon" src="./assets/icons/prev.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/prev.svg"></img>
         prev
       </span>
       <span>
-        <img class="icon" src="./assets/icons/info.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/info.svg"></img>
         info
       </span>
       <span>
-        <img class="icon" src="./assets/icons/phone.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/phone.svg"></img>
         phone
       </span>
       <span>
-        <img class="icon" src="./assets/icons/power.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/power.svg"></img>
         power
       </span>
       <span>
-        <img class="icon" src="./assets/icons/sleep.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/sleep.svg"></img>
         sleep
       </span>
       <span>
-        <img class="icon" src="./assets/icons/read.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/read.svg"></img>
         read
       </span>
       <span>
-        <img class="icon" src="./assets/icons/search.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/search.svg"></img>
         search
       </span>
       <span>
-        <img class="icon" src="./assets/icons/x-close.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/x-close.svg"></img>
         x-close
       </span>
       <span>
-        <img class="icon" src="./assets/icons/wifi.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/wifi.svg"></img>
         wifi
       </span>
       <span>
-        <img class="icon" src="./assets/icons/user.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/user.svg"></img>
         user
       </span>
       <span>
-        <img class="icon" src="./assets/icons/service.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/service.svg"></img>
         service
       </span>
       <span>
-        <img class="icon" src="./assets/icons/tag.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/tag.svg"></img>
         tag
       </span>
       <span>
-        <img class="icon" src="./assets/icons/discount.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/discount.svg"></img>
         discount
       </span>
       <span>
-        <img class="icon" src="./assets/icons/camera.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/camera.svg"></img>
         camera
       </span>
       <span>
-        <img class="icon" src="./assets/icons/video.svg" style="height:24px;margin: 4px 4px;"></img>
+        <img class="i" src="./assets/icons/video.svg"></img>
         video
       </span>
-    </div>
+
+
+
+      <span>
+        <img class="i" src="./assets/icons/coffee.svg"></img>
+        coffee
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/arrow-left.svg"></img>
+        arrow-left
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/gift.svg"></img>
+        gift
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/package.svg"></img>
+        package
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/shipping.svg"></img>
+        shipping
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/watch.svg"></img>
+        watch
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/bluetooth.svg"></img>
+        bluetooth
+      </span>
+
+
+
+      <span>
+        <img class="i" src="./assets/icons/record.svg"></img>
+        record
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/recycle.svg"></img>
+        recycle
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/cash-coin.svg"></img>
+        cash-coin
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/file-zip.svg"></img>
+        file-zip
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/mortarboard.svg"></img>
+        mortarboard
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/paperclip.svg"></img>
+        paperclip
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/newspaper.svg"></img>
+        newspaper
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/exclamation.svg"></img>
+        exclamation
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/mic.svg"></img>
+        mic
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/female.svg"></img>
+        female
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/male.svg"></img>
+        male
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/fingerprint.svg"></img>
+        fingerprint
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/globe.svg"></img>
+        globe
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/qrcode.svg"></img>
+        qrcode
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/badge-hd.svg"></img>
+        badge-hd
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/badge-sd.svg"></img>
+        badge-sd
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/badge-4k.svg"></img>
+        badge-4k
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/shop.svg"></img>
+        shop
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/pin.svg"></img>
+        pin
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/bank.svg"></img>
+        bank
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/trash.svg"></img>
+        trash
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/pencil.svg"></img>
+        pencil
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/signpost.svg"></img>
+        signpost
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/controller.svg"></img>
+        controller
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/heart.svg"></img>
+        heart
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/sliders.svg"></img>
+        sliders
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/puzzle.svg"></img>
+        puzzle
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/sword.svg"></img>
+        sword
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/shield.svg"></img>
+        shield
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/rocket.svg"></img>
+        rocket
+      </span>
+      <span>
+        <img class="i" src="./assets/icons/gauge.svg"></img>
+        gauge
+      </span>
 
     </div>
+    </div>
   </main>
+  <footer>&copy; 2024. All Rights Reserved</footer>
 </body>
 
 </html>

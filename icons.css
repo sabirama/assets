@@ -1,269 +1,456 @@
-icon.m {
- height: 48px;
+i.icon.s-icon {
+    height: 16px;
+    width: auto;   
+}
+i.icon.m-icon {
+ height: 32px;
  width: auto;
+}
+i.icon.l-icon {
+    height: 40px;
+    width: auto;
+}
+i.icon.xl-icon {
+    height: 48px;
+    width: auto;
 }
 
 /* colors */
-icon.white {
+i.icon.white,
+i.icon.hover-white:hover {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(136deg) brightness(106%) contrast(101%);
 }
-icon.red {
+i.icon.pink,
+i.icon.hover-pink:hover {
+    filter: invert(79%) sepia(18%) saturate(558%) hue-rotate(303deg) brightness(98%) contrast(107%);
+}
+i.icon.red,
+i.icon.hover-red:hover {
     filter: invert(19%) sepia(69%) saturate(7390%) hue-rotate(356deg) brightness(96%) contrast(116%);
 }
-icon.green {
+i.icon.green,
+i.icon.hover-green:hover {
     filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
 }
-icon.blue {
+i.icon.forest,
+i.icon.hover-forest:hover {
+    filter: invert(27%) sepia(59%) saturate(5839%) hue-rotate(120deg) brightness(98%) contrast(73%);
+}
+i.icon.cyan,
+i.icon.hover-cyan:hover {
+    filter: invert(95%) sepia(98%) saturate(5383%) hue-rotate(105deg) brightness(104%) contrast(108%);
+}
+i.icon.blue,
+i.icon.hover-blue:hover {
     filter: invert(10%) sepia(100%) saturate(5370%) hue-rotate(244deg) brightness(99%) contrast(152%);
 }
-icon.yellow {
+i.icon.navy,
+i.icon.hover-navy:hover {
+    filter: invert(10%) sepia(49%) saturate(6036%) hue-rotate(240deg) brightness(88%) contrast(135%);
+}
+i.icon.yellow,
+i.icon.hover-yellow:hover {
     filter: invert(97%) sepia(36%) saturate(6555%) hue-rotate(357deg) brightness(104%) contrast(104%);
 }
-icon.orange {
-    filter: invert(64%) sepia(51%) saturate(3051%) hue-rotate(2deg) brightness(107%) contrast(108%);
-}
-icon.purple {
-    filter: invert(15%) sepia(51%) saturate(5584%) hue-rotate(290deg) brightness(78%) contrast(127%);
-}
-icon.brown {
-    filter: invert(18%) sepia(46%) saturate(2615%) hue-rotate(336deg) brightness(116%) contrast(96%);
-}
-icon.gray {
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(360deg) brightness(100%) contrast(100%);
-}
-icon.gold {
+i.icon.gold,
+i.icon.hover-gold:hover {
     filter: invert(83%) sepia(53%) saturate(2612%) hue-rotate(1deg) brightness(105%) contrast(105%);
 }
-icon.silver {
+i.icon.orange,
+i.icon.hover-orane:hover {
+    filter: invert(64%) sepia(51%) saturate(3051%) hue-rotate(2deg) brightness(107%) contrast(108%);
+}
+i.icon.purple,
+i.icon.hover-purple:hover {
+    filter: invert(15%) sepia(51%) saturate(5584%) hue-rotate(290deg) brightness(78%) contrast(127%);
+}
+i.icon.indigo,
+i.icon.hover-indigo:hover {
+    filter: invert(19%) sepia(40%) saturate(5512%) hue-rotate(267deg) brightness(66%) contrast(127%);
+}
+i.icon.brown,
+i.icon.hover-brown:hover {
+    filter: invert(18%) sepia(46%) saturate(2615%) hue-rotate(336deg) brightness(116%) contrast(96%);
+}
+i.icon.gray,
+i.icon.hover-gray:hover {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(360deg) brightness(100%) contrast(100%);
+}
+i.icon.silver,
+i.icon.hover-silver:hover {
     filter: invert(84%) sepia(0%) saturate(535%) hue-rotate(258deg) brightness(96%) contrast(84%);
 }
 
+
 /* icons */
-icon.angular {
+i.icon.angular {
   content: url(./assets/icons/angular.svg);
 }
-icon.api {
+i.icon.api {
   content: url(./assets/icons/api.svg);
 }
-icon.css {
+i.icon.css {
   content: url(./assets/icons/css.svg);
 }
-icon.database {
+i.icon.database {
   content: url(./assets/icons/database.svg);
 }
-icon.discord {
-  content: url(./assets/icons/discord.svg);
+i.icon.diconscord {
+  content: url(./assets/icons/diconscord.svg);
 }
-icon.facebook {
+i.icon.facebook {
   content: url(./assets/icons/facebook.svg);
 }
-icon.gdrive {
+i.icon.gdrive {
   content: url(./assets/icons/gdrive.svg);
 }
-icon.github {
+i.icon.github {
   content: url(./assets/icons/github.svg);
 }
-icon.google {
+i.icon.google {
   content: url(./assets/icons/google.svg);
 }
-icon.html {
+i.icon.html {
     content: url(./assets/icons/html.svg);
 }
-icon.instagram {
+i.icon.instagram {
     content: url(./assets/icons/instagram.svg);
 }
-icon.javascript {
+i.icon.javascript {
     content: url(./assets/icons/javascript.svg);
 }
-icon.laravel {
+i.icon.laravel {
     content: url(./assets/icons/laravel.svg);
 }
-icon.linkedin {
+i.icon.linkedin {
     content: url(./assets/icons/linkedin.svg);
 }
-icon.mail {
+i.icon.mail {
     content: url(./assets/icons/mail.svg);
 }
-icon.messenger {
+i.icon.messenger {
     content: url(./assets/icons/messenger.svg);
 }
-icon.nodejs {
+i.icon.nodejs {
     content: url(./assets/icons/nodejs.svg);
 }
-icon.patreon {
+i.icon.patreon {
     content: url(./assets/icons/patreon.svg);
 }
-icon.php {
+i.icon.php {
     content: url(./assets/icons/php.svg);
 }
-icon.playstore {
+i.icon.playstore {
     content: url(./assets/icons/playstore.svg);
 }
-icon.postman {
+i.icon.postman {
     content: url(./assets/icons/postman.svg);
 }
-icon.reactjs {
+i.icon.reactjs {
     content: url(./assets/icons/reactjs.svg);
 }
-icon.stack {
+i.icon.stack {
     content: url(./assets/icons/stack-overflow.svg);
 }
-icon.steam {
+i.icon.steam {
     content: url(./assets/icons/steam.svg);
 }
-icon.telegram {
+i.icon.telegram {
     content: url(./assets/icons/telegram.svg);
 }
-icon.tiktok {
+i.icon.tiktok {
     content: url(./assets/icons/tiktok.svg);
 }
-icon.unity {
+i.icon.unity {
     content: url(./assets/icons/unity.svg);
 }
-icon.upwork {
+i.icon.upwork {
     content: url(./assets/icons/upwork.svg);
 }
-icon.whatsapp {
+i.icon.whatsapp {
     content: url(./assets/icons/whatsapp.svg);
 }
-icon.at-symbol {
+i.icon.at-symbol {
     content: url(./assets/icons/@.svg);
 }
-icon.calendar {
+i.icon.calendar {
     content: url(./assets/icons/calendar.svg);
 }
-icon.code {
+i.icon.code {
     content: url(./assets/icons/code.svg);
 }
-icon.desktop {
+i.icon.desktop {
     content: url(./assets/icons/desktop.svg);
 }
-icon.eye {
+i.icon.eye {
     content: url(./assets/icons/eye.svg);
 }
-icon.eye-hidden {
+i.icon.eye-hidden {
     content: url(./assets/icons/eye-hidden.svg);
 }
-icon.folder {
+i.icon.folder {
     content: url(./assets/icons/folder.svg);
 }
-icon.food {
+i.icon.food {
     content: url(./assets/icons/food.svg);
 }
-icon.full-screen {
+i.icon.full-screen {
     content: url(./assets/icons/full-screen.svg);
 }
-icon.menu-grid {
-    content: url(./assets/icons/grid_menu.svg);
+i.icon.menu-grid {
+    content: url(./assets/icons/menu-grid.svg);
 }
-icon.menu-burger {
-    content: url(./assets/icons/hamburger_menu.svg);
+i.icon.menu-burger {
+    content: url(./assets/icons/menu-hamburger.svg);
 }
-icon.menu-kebab {
-    content: url(./assets/icons//kebab_icon.svg);
+i.icon.menu-kebab {
+    content: url(./assets/icons/menu-kebab.svg);
 }
-icon.lock {
+i.icon.lock {
     content: url(./assets/icons/lock.svg);
 }
-icon.power {
+i.icon.power {
     content: url(./assets/icons/power.svg);
 }
-icon.read {
+i.icon.read {
     content: url(./assets/icons/read.svg);
 }
-icon.search {
+i.icon.search {
     content: url(./assets/icons/search.svg);
 }
-icon.sleep {
+i.icon.sleep {
     content: url(./assets/icons/sleep.svg);
 }
-icon.unlock {
+i.icon.unlock {
     content: url(./assets/icons/unlock.svg);
 }
-icon.x-close {
+i.icon.x-close {
     content: url(./assets/icons/x-close.svg);
 }
-icon.music {
+i.icon.music {
     content: url(./assets/icons/music.svg);
 }
-icon.mobile {
+i.icon.mobile {
     content: url(./assets/icons/mobile.svg);
 }
-icon.phone {
+i.icon.phone {
     content: url(./assets/icons/phone.svg);
 }
-icon.mute {
+i.icon.mute {
     content: url(./assets/icons/mute.svg);
 }
-icon.next {
+i.icon.next {
     content: url(./assets/icons/next.svg);
 }
-icon.prev {
+i.icon.prev {
     content: url(./assets/icons/prev.svg);
 }
-icon.play {
+i.icon.play {
     content: url(./assets/icons/play.svg);
 }
-icon.reload {
+i.icon.reload {
     content: url(./assets/icons/reload.svg);
 }
-icon.cloud-upload {
+i.icon.cloud-upload {
     content: url(./assets/icons/cloud-upload.svg);
 }
-icon.cloud-dload {
+i.icon.cloud-dload {
     content: url(./assets/icons/cloud-download.svg);
 }
-icon.home {
+i.icon.home {
     content: url(./assets/icons/home.svg);
 }
-icon.apple {
+i.icon.apple {
     content: url(./assets/icons/apple.svg);
 }
-icon.android {
+i.icon.android {
     content: url(./assets/icons/android.svg);
 }
-icon.chrome {
+i.icon.chrome {
     content: url(./assets/icons/chrome.svg);
 }
-icon.firefox {
+i.icon.firefox {
     content: url(./assets/icons/firefox.svg);
 }
-icon.info {
+i.icon.info {
     content: url(./assets/icons/info.svg);
 }
-icon.youtube {
+i.icon.youtube {
     content: url(./assets/icons/youtube.svg);
 }
-icon.wifi {
+i.icon.wifi {
     content: url(./assets/icons/wifi.svg);
 }
-icon.opera {
+i.icon.opera {
     content: url(./assets/icons/opera.svg);
 }
-icon.nextjs {
+i.icon.nextjs {
     content: url(./assets/icons/nextjs.svg);
 }
-icon.user {
+i.icon.user {
     content: url(./assets/icons/user.svg);
 }
-icon.service {
+i.icon.service {
     content: url(./assets/icons/service.svg);
 }
-icon.tag {
+i.icon.tag {
     content: url(./assets/icons/tag.svg);
 }
-icon.discount {
-    content: url(./assets/icons/discount.svg);
+i.icon.diconscount {
+    content: url(./assets/icons/diconscount.svg);
 }
-icon.camera {
+i.icon.camera {
     content: url(./assets/icons/camera.svg);
 }
-icon.video {
+i.icon.video {
     content: url(./assets/icons/video.svg);
 }
-icon.beverage {
+i.icon.beverage {
     content: url(./assets/icons/beverage.svg);
 }
-icon.pause {
+i.icon.pause {
     content: url(./assets/icons/pause.svg);
+}
+i.icon.coffee {
+    content: url(./assets/icons/coffee.svg);
+}
+i.icon.stop {
+    content: url(./assets/icons/stop.svg);
+}
+i.icon.list {
+    content: url(./assets/icons/list.svg);
+}
+i.icon.gift {
+    content: url(./assets/icons/gift.svg);
+}
+i.icon.package {
+    content: url(./assets/icons/package.svg);
+}
+i.icon.shipping {
+    content: url(./assets/icons/shipping.svg);
+}
+i.icon.crop {
+    content: url(./assets/icons/crop.svg);
+}
+i.icon.shuffle {
+    content: url(./assets/icons/shuffle.svg);
+}
+i.icon.arrow-left {
+    content: url(./assets/icons/arrow-left.svg);
+}
+i.icon.watch {
+    content: url(./assets/icons/watch.svg);
+}
+i.icon.bluetooth {
+    content: url(./assets/icons/bluetooth.svg);
+}
+i.icon.layer {
+    content: url(./assets/icons/layer.svg);
+}
+i.icon.print {
+    content: url(./assets/icons/print.svg);
+}
+i.icon.key {
+    content: url(./assets/icons/key.svg);
+}
+i.icon.link {
+    content: url(./assets/icons/link.svg);
+}
+i.icon.share {
+    content: url(./assets/icons/share.svg);
+}
+
+
+i.icon.record {
+    content: url(./assets/icons/record.svg);
+}
+i.icon.recycle {
+    content: url(./assets/icons/recycle.svg);
+}
+i.icon.cash-coin {
+    content: url(./assets/icons/cash-coin.svg);
+}
+i.icon.file-zip {
+    content: url(./assets/icons/file-zip.svg);
+}
+i.icon.mortarboard {
+    content: url(./assets/icons/mortarboard.svg);
+}
+i.icon.paperclip {
+    content: url(./assets/icons/paperclip.svg);
+}
+i.icon.newspaper {
+    content: url(./assets/icons/newspaper.svg);
+}
+i.icon.exclamation {
+    content: url(./assets/icons/exclamation.svg);
+}
+i.icon.mic {
+    content: url(./assets/icons/mic.svg);
+}
+i.icon.female {
+    content: url(./assets/icons/female.svg);
+}
+i.icon.male {
+    content: url(./assets/icons/male.svg);
+}
+i.icon.fingerprint {
+    content: url(./assets/icons/fingerprint.svg);
+}
+i.icon.globe {
+    content: url(./assets/icons/globe.svg);
+}
+i.icon.qrcode {
+    content: url(./assets/icons/qrcode.svg);
+}
+i.icon.badge-hd {
+    content: url(./assets/icons/badge-hd.svg);
+}
+i.icon.badge-sd {
+    content: url(./assets/icons/badge-sd.svg);
+}
+i.icon.badge-4k {
+    content: url(./assets/icons/badge-4k.svg);
+}
+i.icon.shop {
+    content: url(./assets/icons/shop.svg);
+}
+i.icon.pin {
+    content: url(./assets/icons/pin.svg);
+}
+i.icon.bank {
+    content: url(./assets/icons/bank.svg);
+}
+i.icon.trash {
+    content: url(./assets/icons/trash.svg);
+}
+i.icon.pencil {
+    content: url(./assets/icons/pencil.svg);
+}
+i.icon.signpost {
+    content: url(./assets/icons/signpost.svg);
+}
+i.icon.controller {
+    content: url(./assets/icons/controller.svg);
+}
+i.icon.heart {
+    content: url(./assets/icons/heart.svg);
+}
+i.icon.sliders {
+    content: url(./assets/icons/sliders.svg);
+}
+i.icon.puzzle {
+    content: url(./assets/icons/puzzle.svg);
+}
+i.icon.sword {
+    content: url(./assets/icons/sword.svg);
+}
+i.icon.shield {
+    content: url(./assets/icons/shield.svg);
+}
+i.icon.gauge {
+    content: url(./assets/icons/gauge.svg);
+}
+i.icon.rocket {
+    content: url(./assets/icons/rocket.svg);
 }
