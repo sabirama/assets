@@ -102,3 +102,18 @@ footer {
     padding: 1.5rem;
     text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+    aside {
+        top: 0;
+        left: -11rem;
+        padding: 2rem;
+        background: rgba(255, 255, 255, 0.5);
+        transition: .6s;
+    }
+    aside:hover {
+        left: 0;
+        background: black;
+        transition: .6s;
+    }
+}
