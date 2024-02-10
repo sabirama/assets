@@ -103,7 +103,7 @@ footer {
     text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     aside {
         top: 0;
         left: -11rem;
@@ -113,6 +113,7 @@ footer {
     }
     aside:hover {
         left: 0;
+        position: sticky;
         background: black;
         transition: .6s;
     }
