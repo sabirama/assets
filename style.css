@@ -113,7 +113,7 @@ footer {
     }
     aside:hover {
         left: 0;
-        position: sticky;
+        position: fixed;
         background: black;
         transition: .6s;
     }
