@@ -95,8 +95,8 @@ i.icon.css {
 i.icon.database {
   content: url(./assets/icons/database.svg);
 }
-i.icon.diconscord {
-  content: url(./assets/icons/diconscord.svg);
+i.icon.discord {
+  content: url(./assets/icons/discord.svg);
 }
 i.icon.facebook {
   content: url(./assets/icons/facebook.svg);
@@ -296,8 +296,8 @@ i.icon.service {
 i.icon.tag {
     content: url(./assets/icons/tag.svg);
 }
-i.icon.diconscount {
-    content: url(./assets/icons/diconscount.svg);
+i.icon.discount {
+    content: url(./assets/icons/discount.svg);
 }
 i.icon.camera {
     content: url(./assets/icons/camera.svg);
@@ -359,8 +359,6 @@ i.icon.link {
 i.icon.share {
     content: url(./assets/icons/share.svg);
 }
-
-
 i.icon.record {
     content: url(./assets/icons/record.svg);
 }
