@@ -103,6 +103,35 @@ footer {
     text-align: center;
 }
 
+
+#animation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.animation-details {
+    width: fit-content;
+}
+
+.animation-box {
+    padding: 1rem 1rem 0 1rem;
+    overflow: hidden;
+    background: wheat;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 72px;
+    position: relative;
+}
+
+.animation-item {
+    background: darkslategrey;
+    height: 50px;
+    width: 50px;
+    border-radius: 6px;
+}
+
 @media screen and (max-width: 1000px) {
     aside {
         top: 0;

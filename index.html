@@ -7,6 +7,7 @@
   <title>ASSETS</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="icons.css" />
+  <link rel="stylesheet" href="animation.css" />
 </head>
 
 <body>
@@ -19,6 +20,12 @@
       <li><a href="#colors">Colors</a></li>
       <li><a href="#icons">Icons</a></li>
     </ul>
+    <ul>
+      Animation
+      <li><a href="#duration">Duration</a></li>
+      <li><a href="#delay">Delay</a></li>
+      <li><a href="#animation">Animations</a></li>
+    </ul>
   </aside>
   <main>
     <div>
@@ -27,9 +34,11 @@
         <p>Repository:</p>
         <a href="https://github.com/sabirama/assets/tree/master">https://github.com/sabirama/assets/tree/master</a>
       </span>
-      <p> Put into your html file &lt;link rel="stylesheet" href="https://sabirama.github.io/assets/icons.css" &gt; </p>
+      <p> For Icons, put into your html file &lt;link rel="stylesheet" href="https://sabirama.github.io/assets/icons.css" &gt; </p>
       <p>or the minified version &lt;link rel="stylesheet" href="https://sabirama.github.io/assets/icons-mini.css" &gt;
       </p>
+      <p>For Animations, &lt;link rel="stylesheet" href="https://sabirama.github.io/assets/animation.css" &gt;</p>
+      <p>or the minified version, &lt;link rel="stylesheet" href="https://sabirama.github.io/assets/animation-mini.css" &gt;</p>
     </div>
     <br>
     Create an element with i tag.
@@ -81,7 +90,6 @@
 
     <h3 id="icons">iCONS and LOGOS</h3>
     <div class="i-container">
-     
       <span>
         <img class="i" src="./assets/icons/html.svg"></img>
         html
@@ -586,7 +594,333 @@
       </span>
 
     </div>
+
+    <h3 id="css-animations">CSS ANIMATION</h3>
+
+    <p>Uses animation property to create animation.</p>
+
+    <p>NOTE: add ovrflow hidden to parent element of animation element if you don't want the whole page to see it during animation.</p>
+    
+    <div>
+      <p id="duration">Duration</p>
+      <p>Add {animate} to class to add animation to html element.</p>
+      <ul>
+        <li>default duration is 1s.</li>
+        <li>animate-halfs = .5s</li>
+        <li>animate-1halfs = 1.5s</li>
+        <li>animate-2s = 2s</li>
+        <li>animate-2halfs = 2.5s</li>
+        <li>animate-3s = 3s</li>
+        <li>animate-3halfs = 3.5s</li>
+        <li>animate-4s = 4s</li>
+        <li>animate-4halfs = 5.5s</li>
+        <li>animate-5s = 5s</li>
+        <li>animate-5halfs = 5.5s/li>
+      </ul>
+
+      <p id="delay">Delay</p>
+      <p>Add {delay} to class add delay before animation starts.</p>
+      <p>If delay is not added the animation starts right away</p>
+      <ul>
+        <li>default when added a delay is 1s.</li>
+        <li>delay-halfs = .5s</li>
+        <li>delay-1halfs = 1.5s</li>
+        <li>delay-2s = 2s</li>
+        <li>delay-2halfs = 2.5s</li>
+        <li>delay-3s = 3s</li>
+        <li>delay-3halfs = 3.5s</li>
+        <li>delay-4s = 4s</li>
+        <li>delay-4halfs = 4.5s</li>
+        <li>delay-5s = 5s</li>
+        <li>delay-5halfs = 5.5s</li>
+      </ul>
+
+      <div id="animation">
+
+        <div class="animation-details">
+          <span class="animation-text">
+            spin
+          </span>
+          <div class="animation-box">
+            <div class="animation-item animate-4s spin loop"></div>
+          </div>
+        </div>
+
+        <div class="animation-details">
+          <span class="animation-text">
+            spin-bw
+          </span>
+          <div class="animation-box">
+            <div class="animation-item animate-4s spin-bw loop"></div>
+          </div>
+        </div>
+
+        <div class="animation-details">
+          <span class="animation-text">
+            beat
+          </span>
+          <div class="animation-box">
+            <div class="animation-item animate beat loop"></div>
+          </div>
+        </div>
+
+        <div class="animation-details">
+          <span class="animation-text">
+            left-right-left
+          </span>
+          <div class="animation-box">
+            <div class="animation-item animate-4s left-right-left loop"></div>
+          </div>
+        </div>
+
+        <div class="animation-details">
+          <span class="animation-text">
+            right-left-right
+          </span>
+          <div class="animation-box">
+            <div class="animation-item animate-4s right-left-right loop"></div>
+          </div>
+        </div>
+
+        <div class="animation-details">
+          <span class="animation-text">
+            left-in
+          </span>
+          <div class="animation-box">
+            <div class="animation-item animate-4s left-in"></div>
+          </div>
+        </div>
+
+        <div class="animation-details">
+          <span class="animation-text">
+            left-out
+          </span>
+          <div class="animation-box">
+            <div class="animation-item animate-4s delay-2s left-out"></div>
+          </div>
+        </div>
+  
+        <div class="animation-details">
+          <span class="animation-text">
+            right-in
+          </span>
+          <div class="animation-box">
+            <div class="animation-item animate-4s right-in"></div>
+          </div>
+        </div>
+  
+        <div class="animation-details">
+          <span class="animation-text">
+            right-out
+          </span>
+          <div class="animation-box">
+            <div class="animation-item animate-4s delay-2s right-out"></div>
+          </div>
+        </div>
+
+        <div class="animation-details">
+          <span class="animation-text">
+            top-in
+          </span>
+          <div class="animation-box">
+            <div class="animation-item animate-4s top-in"></div>
+          </div>
+        </div>
+  
+        <div class="animation-details">
+          <span class="animation-text">
+            top-out
+          </span>
+          <div class="animation-box">
+            <div class="animation-item animate-4s delay-2s top-out"></div>
+          </div>
+        </div>
+
+        <div class="animation-details">
+          <span class="animation-text">
+            down-in
+          </span>
+          <div class="animation-box">
+            <div class="animation-item animate-4s own-in"></div>
+          </div>
+        </div>
+  
+        <div class="animation-details">
+          <span class="animation-text">
+            down-out
+          </span>
+          <div class="animation-box">
+            <div class="animation-item animate-4s delay-2s down-out"></div>
+          </div>
+        </div>
+
+        <div class="animation-details">
+          <span class="animation-text">
+            roll-left-in
+          </span>
+          <div class="animation-box">
+            <div class="animation-item animate-4s roll-left-in"></div>
+          </div>
+        </div>
+  
+        <div class="animation-details">
+          <span class="animation-text">
+            roll-left-out
+          </span>
+          <div class="animation-box">
+            <div class="animation-item animate-4s delay-2s roll-left-out"></div>
+          </div>
+        </div>
+
+        <div class="animation-details">
+          <span class="animation-text">
+            roll-right-in
+          </span>
+          <div class="animation-box">
+            <div class="animation-item animate-4s roll-right-in"></div>
+          </div>
+        </div>
+  
+        <div class="animation-details">
+          <span class="animation-text">
+            roll-right-out
+          </span>
+          <div class="animation-box">
+            <div class="animation-item animate-4s delay-2s roll-right-out"></div>
+          </div>
+        </div>
+
+        <div class="animation-details">
+          <span class="animation-text">
+            roll-up-in
+          </span>
+          <div class="animation-box">
+            <div class="animation-item animate-4s roll-up-in"></div>
+          </div>
+        </div>
+  
+        <div class="animation-details">
+          <span class="animation-text">
+            roll-up-out
+          </span>
+          <div class="animation-box">
+            <div class="animation-item animate-4s delay-2s roll-up-out"></div>
+          </div>
+        </div>
+
+        <div class="animation-details">
+          <span class="animation-text">
+            roll-down-in
+          </span>
+          <div class="animation-box">
+            <div class="animation-item animate-4s roll-down-in"></div>
+          </div>
+        </div>
+  
+        <div class="animation-details">
+          <span class="animation-text">
+            roll-down-out
+          </span>
+          <div class="animation-box">
+            <div class="animation-item animate-4s delay-2s roll-down-out"></div>
+          </div>
+        </div>
+
+        <div class="animation-details">
+          <span class="animation-text">
+            rotate-scale-in
+          </span>
+          <div class="animation-box">
+            <div class="animation-item animate-4s rotate-scale-in"></div>
+          </div>
+        </div>
+  
+        <div class="animation-details">
+          <span class="animation-text">
+            rotate-rotate-out
+          </span>
+          <div class="animation-box">
+            <div class="animation-item animate-4s rotate-scale-out"></div>
+          </div>
+        </div>
+
+        <div class="animation-details">
+          <span class="animation-text">
+           left-right
+          </span>
+          <div class="animation-box">
+            <div class="animation-item animate-4s left-right"></div>
+          </div>
+        </div>
+  
+        <div class="animation-details">
+          <span class="animation-text">
+            right-left
+          </span>
+          <div class="animation-box">
+            <div class="animation-item animate-4s right-left"></div>
+          </div>
+        </div>
+
+        <div class="animation-details">
+          <span class="animation-text">
+            rotate
+          </span>
+          <div class="animation-box">
+            <div class="animation-item animate-4s rotate loop"></div>
+          </div>
+        </div>
+
+        <div class="animation-details">
+          <span class="animation-text">
+            rotate-bw
+          </span>
+          <div class="animation-box">
+            <div class="animation-item animate-4s rotate-bw loop"></div>
+          </div>
+        </div>
+
+        <div class="animation-details">
+          <span class="animation-text">
+            scale-x
+          </span>
+          <div class="animation-box">
+            <div class="animation-item animate-4s scale-x"></div>
+          </div>
+        </div>
+
+        <div class="animation-details">
+          <span class="animation-text">
+            scale-y
+          </span>
+          <div class="animation-box">
+            <div class="animation-item animate-4s scale-y"></div>
+          </div>
+        </div>
+
+        <div class="animation-details">
+          <span class="animation-text">
+            scale-x-y
+          </span>
+          <div class="animation-box">
+            <div class="animation-item animate-4s scale-x-y"></div>
+          </div>
+        </div>
+
+        <div class="animation-details">
+          <span class="animation-text">
+            scale-y-x
+          </span>
+          <div class="animation-box">
+            <div class="animation-item animate-4 scale-y-x"></div>
+          </div>
+        </div>
+
+
+      </div>
     </div>
+
+    
   </main>
   <footer>&copy; 2024. All Rights Reserved</footer>
 </body>

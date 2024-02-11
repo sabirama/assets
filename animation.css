@@ -1,0 +1,676 @@
+.animate-halfs {
+    animation-duration: 0.5s;
+}
+
+.animate {
+    animation-duration: 1s;
+}
+
+.animate-1halfs {
+    animation-duration: 1s;
+}
+
+.animate-2s {
+    animation-duration: 2s;
+}
+
+.animate-2halfs {
+    animation-duration: 2.5s;
+}
+
+.animate-3s {
+    animation-duration: 3s;
+}
+
+.animate-3halfs {
+    animation-duration: 3.5s;
+}
+
+.animate-4s {
+    animation-duration: 4s;
+}
+
+.animate-4halfs {
+    animation-duration: 4.5s;
+}
+
+.animate-5s {
+    animation-duration: 5s;
+}
+
+.animate-5halfs {
+    animation-duration: 5.5s;
+}
+
+.delay-halfs {
+    animation-delay: 0.5s;
+}
+
+.delay {
+    animation-delay: 1s;
+}
+
+.delay-1halfss {
+    animation-delay: 1.5s;
+}
+
+.delay-2s {
+    animation-delay: 2s;
+}
+
+.delay-2halfs {
+    animation-delay: 2.5s;
+}
+
+.delay-3s {
+    animation-delay: 3s;
+}
+
+.delay-3halfs {
+    animation-delay: 3.5s;
+}
+
+.delay-4s {
+    animation-delay: 4s;
+}
+
+.delay-4halfs {
+    animation-delay: 4.5s;
+}
+
+.delay-5s {
+    animation-delay: 5s;
+}
+
+.delay-5halfs {
+    animation-delay: 5.5s;
+}
+
+.loop {
+    animation-iteration-count: infinite;
+}
+
+.spin {
+    animation-name: spin;
+    animation-timing-function: ease-in-out;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spin-bw {
+    animation-name: spin-bw;
+    animation-timing-function: ease-in-out;
+    animation-timing-function: linear;
+}
+
+@keyframes spin-bw {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.spin-scale {
+    animation-name: spin-scale;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin-scale {
+    0% {
+        transform: rotate(0) scale(0);
+    }
+    50%{
+        transform: rotate(calc(360deg)) scale(1);
+    }
+    100% {
+        transform: rotate(calc(360deg * 2)) scale(0);
+    }
+}
+
+.beat {
+    animation-name: beat;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(.9);
+    }
+    90%{
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(.9);
+    }
+}
+
+.left-in {
+    animation-name: left-in;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    transform: translateX(-100vw);
+}
+
+@keyframes left-in {
+    from {
+        transform: translateX(-100vw);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.left-out {
+    animation-name: left-out;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes left-out {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100vw);
+    }
+}
+
+.right-in {
+    animation-name: right-in;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    transform: translateX(100vw);
+}
+
+@keyframes right-in {
+    from {
+        transform: translateX(100vw);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.right-out {
+    animation-name: right-out;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes right-out {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100vw);
+    }
+}
+
+.top-in {
+    animation-name: top-in;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    transform: translateY(-100vh);
+}
+
+@keyframes top-in {
+    from {
+        transform: translateY(-100vh);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.top-out {
+    animation-name: top-out;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes top-out {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-100vh);
+    }
+}
+
+.down-in {
+    animation-name: down-in;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    transform: translateY(100vh);
+}
+
+@keyframes down-in {
+    from {
+        transform: translateY(100vh);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.down-out {
+    animation-name: down-out;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes down-out {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+.scale-in {
+    animation-name: scale-in;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    transform: scale(0);
+}
+
+@keyframes scale-in {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.scale-out {
+    animation-name: scale-out;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes scale-out {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0);
+    }
+}
+
+.roll-left-in {
+    animation-name: roll-left-in;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    transform: translateX(-100vw) rotate(-3000deg);
+}
+
+@keyframes roll-left-in {
+    from {
+        transform:translateX(-100vw) rotate(-3000deg);
+    }
+
+    to {
+        transform: translateX(0) rotate(0);
+    }
+}
+
+.roll-left-out {
+    animation-name: roll-left-out;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes roll-left-out {
+    from {
+        transform: translateX(0) rotate(0);
+    }
+
+    to {
+        transform: translateX(-100vw) rotate(-3000deg);
+    }
+}
+
+.roll-right-in {
+    animation-name: roll-right-in;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    transform:translateX(100vw) rotate(3000deg);
+}
+
+@keyframes roll-right-in {
+    from {
+        transform:translateX(100vw) rotate(3000deg);
+    }
+
+    to {
+        transform: translateX(0) rotate(0);
+    }
+}
+
+.roll-right-out {
+    animation-name: roll-right-out;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes roll-right-out {
+    from {
+        transform: translateX(0) rotate(0);
+    }
+
+    to {
+        transform: translateX(100vw) rotate(3000deg);
+    }
+}
+
+.roll-up-in {
+    animation-name: roll-up-in;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    transform:translateY(100vh) rotate(-3000deg);
+}
+
+@keyframes roll-up-in {
+    from {
+        transform:translateY(100vh) rotate(-3000deg);
+    }
+
+    to {
+        transform: translateY(0) rotate(0);
+    }
+}
+
+
+.roll-up-out {
+    animation-name: roll-up-out;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes roll-up-out {
+    from {
+        transform: translateY(0) rotate(0);
+    }
+    to {
+        transform: translateY(-100vh) rotate(-3000deg);
+    }
+}
+
+.roll-down-in {
+    animation-name: roll-down-in;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    transform: translateY(-100vh) rotate(3000deg);
+}
+
+@keyframes roll-down-in {
+    from {
+        transform: translateY(-100vh) rotate(3000deg);
+    }
+    to {
+        transform: translateY(0) rotate(0);
+    }
+}
+
+.roll-down-out {
+    animation-name: roll-down-out;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes roll-down-out {
+    from {
+        transform: translateY(0) rotate(0);
+    }
+
+    to {
+        transform: translateY(100vh) rotate(3000deg);
+    }
+}
+
+.rotate-scale-in {
+    animation-name: rotate-scale-in;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    transform: rotate(3000deg) scale(0);
+}
+
+@keyframes rotate-scale-in {
+    from {
+        transform: rotate(3000deg) scale(0);
+    }
+
+    to {
+        transform: rotate(0) scale(1);
+    }
+}
+
+.rotate-scale-out {
+    animation-name: rotate-scale-out;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate-scale-out {
+    from {
+        transform: rotate(0) scale(1);
+    }
+
+    to {
+        transform: rotate(3000deg) scale(0);
+    }
+}
+
+.left-right {
+    animation-name: left-right;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    position: absolute;
+}
+
+@keyframes left-right{
+    from {
+        left: 0;
+        transform: translateX(0);
+    }
+
+    to {
+       left: 100%;
+       transform: translateX(-100%);
+    }
+}
+
+.right-left {
+    animation-name: right-left;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    position: absolute;
+}
+
+@keyframes right-left{
+    from {
+        right: 0;
+        transform: translateX(0);
+    }
+
+    to {
+       right: 100%;
+       transform: translateX(100%);
+    }
+}
+
+.left-right-left {
+    animation-name: left-right-left;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    position: absolute;
+}
+
+@keyframes left-right-left {
+    0% {
+        left: 0;
+        transform: translateX(0);
+    }
+    50% {
+       left: 100%;
+       transform: translateX(-100%);
+    }
+    100% {
+       left: 0;
+       transform: translateX(0);
+    }
+}
+
+.right-left-right {
+    animation-name: right-left-right;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    position: absolute;
+}
+
+@keyframes right-left-right {
+    0% {
+        right: 0;
+        transform: translateX(0);
+    }
+
+    50% {
+        right: 100%;
+        transform: translateX(100%);
+    }
+    100% {
+        right: 0;
+        transform: translateX(0);
+    }
+}
+
+.rotate {
+    animation-name: rotate;
+    animation-fill-mode:forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    from {
+        transform:  rotate(0) translateX(100%);
+    }
+    to {
+        transform: rotate(360deg) translateX(100%) ;
+    }
+}
+
+.rotate-bw {
+    animation-name: rotate-bw;
+    animation-fill-mode:forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate-bw {
+    from {
+        transform:  rotate(0) translateX(-100%);
+    }
+    to {
+        transform: rotate(-360deg) translateX(-100%) ;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform:  rotate(0) translateX(100%);
+    }
+    to {
+        transform: rotate(360deg) translateX(100%) ;
+    }
+}
+
+.scale-x {
+    animation-name: scale-x;
+    animation-fill-mode:forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes scale-x {
+    from {
+        transform:  scaleX(0) ;
+    }
+    to {
+        transform: scaleX(100%) ;
+    }
+}
+
+.scale-y {
+    animation-name: scale-y;
+    animation-fill-mode:forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes scale-y {
+    from {
+        transform:  scaleY(0) ;
+    }
+    to {
+        transform: scaleY(100%) ;
+    }
+}
+
+.scale-x-y {
+    animation-name: scale-x-y;
+    animation-fill-mode:forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes scale-x-y {
+    0% {
+        transform:  scaleX(0) scaleY(0);
+    }
+    50% {
+        transform: scaleX(100%) scaleY(10%);
+    }
+    100% {
+        transform: scaleX(100%) scaleY(100%);
+    }
+}
+
+.scale-y-x {
+    animation-name: scale-y-x;
+    animation-fill-mode:forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes scale-y-x {
+    0% {
+        transform:  scaleX(0) scaleY(0);
+    }
+    50% {
+        transform: scaleX(10%) scaleY(100%);
+    }
+    100% {
+        transform: scaleX(100%) scaleY(100%);
+    }
+}
