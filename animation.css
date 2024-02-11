@@ -664,13 +664,13 @@
 }
 
 @keyframes scale-y-x {
-    0% {
-        transform:  scaleX(0) scaleY(0);
-    }
-    50% {
-        transform: scaleX(10%) scaleY(100%);
-    }
-    100% {
-        transform: scaleX(100%) scaleY(100%);
-    }
+   0% {
+    transform: scaleX(0) scaleY(0);
+   }
+   50% {
+    transform: scaleX(10%) scaleY(100%);
+   }
+   100% {
+    transform: scaleX(100%) scaleY(100%);
+   }
 }
