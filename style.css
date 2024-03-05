@@ -1,3 +1,5 @@
+@import url(./components/carousel/carousel.css);
+
 body {
     background: black;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -9,11 +11,16 @@ body {
 }
 
 main {
-    padding: 12px 48px;
-    width: 85%;
+    padding: .8rem 1rem;
     display: flex;
     flex-direction: column;
     margin: auto 0 auto auto;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        width: 85%;
+    }
 }
 
 aside {
@@ -22,6 +29,7 @@ aside {
     flex-direction: column;
     left: 2rem;
     top: 3rem;
+    z-index: 2;
 }
 
 .top {
@@ -131,6 +139,16 @@ footer {
     width: 50px;
     border-radius: 6px;
 }
+
+.components {
+    margin-top: 3rem;
+}
+
+.components h3 {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
 
 @media screen and (max-width: 1000px) {
     aside {
