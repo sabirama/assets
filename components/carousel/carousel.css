@@ -1,6 +1,8 @@
 :root {
     --carousel-width: 300px;
     --carousel-height: 600px;
+    --carousel-header-footer-bg: chocolate;
+    --carousel-body-bg: lightslategray;
 }
 
 @media screen and (min-width: 768px) {
@@ -48,7 +50,7 @@ body {
 }
 
 .carousel-item {
-    background: darkslategrey;
+    background: var(--carousel-body-bg);
     margin: 0 .5rem;
     height: var(--carousel-height);
     width: var(--carousel-width);
@@ -87,15 +89,10 @@ body {
 .carousel-header,
 .carousel-footer {
     display: flex;
-    background-color: chocolate;
+    background-color: var(--carousel-header-footer-bg);
     padding: .5rem;
 }
 
 button.carousel-active {
     background-color: rgba(0, 0, 0, 0.5);
-}
-
-.image-bg1 {
-    background: url(./placeholder.png);
-    background-size: cover;
 }

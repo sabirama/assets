@@ -30,6 +30,7 @@
       Components
       <li><a href="#carousel">Carousel</a></li>
       <li><a href="#date">Date</a></li>
+      <li><a href="#camera">Camera</a></li>
     </ul>
   </aside>
   <main>
@@ -928,7 +929,7 @@
         <p>edit carousel height and width by changing css custom :root variable " --carousel-width" and " --carousel-height" and it must be in px.</p>
        <div class="code">
         <code class="code">
-          HTML <br>
+         ```<br>
           &lt;div class="carousel"&gt; <br>
           &lt;div class="carousel-content"&gt; <br>
                 &lt; div class="carousel-container"&gt; <br>
@@ -941,7 +942,7 @@
                 &lt;/div&gt;<br>
                 &lt;/div&gt;<br>
                 &lt;/div&gt;<br>
-                &lt;/div&gt;<br>
+                &lt;/div&gt;<br>```
         </code>
        </div>
         <div class="carousel">
@@ -1014,6 +1015,23 @@
         <span>example:</span> &lt;p class="date year"&gt;&lt;/p&gt; this will show the current year: <span class="date year"></span>.
         <p>As for time, add "hour" or "hour-12", or "minute" or "second" or "meridian" after time class.</p>
         <span>exmple:</span> &lt;p class="time meridian"&gt;&lt;/p&gt; this will show if it is am or pm: <span class="time meridian"></span>.
+      </div>
+
+      <div id="camera">
+        <h3>Camera</h3>
+        <p>Add this to your html document:</p>
+        <code>```<br>
+          &lt;button id="cam-start"&gt;{Your Text}&lt;/button&gt; <br>
+          &lt;div id="cam-container"&gt;<br>```
+        </code>
+        <p>By pressing the button with id="cam-start" you can open the camera.</p>
+        <p>If you want to style your components, this are the element ids:</p>
+        <p>video element="video"</p>
+        <p>capture button="capture-btn"</p>
+        <p>canvas="img-canvas"</p>
+        <p>donwload button="img-dl-btn"</p>
+        <button id="cam-start">Start Camera</button>
+        <div id="cam-container"></div>
       </div>
     </div>
   </main>

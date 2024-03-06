@@ -165,3 +165,7 @@ footer {
         transition: .6s;
     }
 }
+
+button {
+    color: black;
+}
