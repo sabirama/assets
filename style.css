@@ -12,10 +12,15 @@ body {
 }
 
 main {
-    padding: .8rem 1rem;
+    padding: .8rem 0;
     display: flex;
     flex-direction: column;
-    margin: auto 0 auto 4rem;
+    margin: auto 0 auto auto;
+}
+@media screen and (max-width: 768px) {
+    main {
+        margin-left: 4rem;
+    }
 }
 
 @media screen and (min-width: 768px) {
