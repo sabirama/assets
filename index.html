@@ -29,6 +29,8 @@
     <ul>
       Components
       <li><a href="#carousel">Carousel</a></li>
+      <li><a href="#dropdown">Dropdown</a></li>
+      <li><a href="#float">Float</a></li>
       <li><a href="#date">Date</a></li>
       <li><a href="#camera">Camera</a></li>
     </ul>
@@ -40,13 +42,20 @@
         <p>Repository:</p>
         <a href="https://github.com/sabirama/assets/tree/master">https://github.com/sabirama/assets/tree/master</a>
       </span>
-      <p> For Icons, put into your html file, &lt;link rel="stylesheet"
-        href="https://sabirama.github.io/assets/icons.css" &gt; </p>
-      <p>or the minified version, &lt;link rel="stylesheet" href="https://sabirama.github.io/assets/icons-mini.css" &gt;
-      </p>
-      <p>For Animations, &lt;link rel="stylesheet" href="https://sabirama.github.io/assets/animation.css" &gt;</p>
-      <p>or the minified version, &lt;link rel="stylesheet" href="https://sabirama.github.io/assets/animation-mini.css"
-        &gt;</p>
+      <div class="info">
+        <p> For Icons, put into your html file, &lt;link rel="stylesheet"
+          href="https://sabirama.github.io/assets/icons.css" &gt; </p>
+        <p>or the minified version, &lt;link rel="stylesheet" href="https://sabirama.github.io/assets/icons-mini.css"
+          &gt;
+        </p>
+        <p>For Animations, &lt;link rel="stylesheet" href="https://sabirama.github.io/assets/animation.css" &gt;</p>
+        <p>or the minified version, &lt;link rel="stylesheet"
+          href="https://sabirama.github.io/assets/components.css"&gt;
+        </p>
+        <p>For the Components, stylesheet: &lt;link rel="stylesheet"
+          href="https://sabirama.github.io/assets/animation.css" &gt; and scripts: &lt;script src="https://sabirama.github.io/assets/index.js" type="module"&gt;&lt;/script&gt;
+        </p>
+      </div>
     </div>
     <br>
     Create an element with i tag.
@@ -66,7 +75,6 @@
         <li>l-icon = 40px height</li>
         <li>xl-icon = 48px height</li>
       </ul>
-
     </div>
 
     <p id="colors"> Colors:</p>
@@ -922,13 +930,13 @@
     </div>
 
     <div class="components" id="components">
-
       <div id="carousel">
         <h3>Carousel</h3>
         <p>Create a carousel for your website by copying the html snippet.</p>
-        <p>edit carousel height and width by changing css custom :root variable " --carousel-width" and " --carousel-height" and it must be in px.</p>
-       <div class="code">
-        <code class="code">
+        <p>edit carousel height and width by changing css custom :root variable " --carousel-width" and "
+          --carousel-height" and it must be in px.</p>
+        <div class="code">
+          <code class="code">
          ```<br>
           &lt;div class="carousel"&gt; <br>
           &lt;div class="carousel-content"&gt; <br>
@@ -944,77 +952,122 @@
                 &lt;/div&gt;<br>
                 &lt;/div&gt;<br>```
         </code>
-       </div>
+        </div>
         <div class="carousel">
           <div class="carousel-content">
-              <div class="carousel-container">
-                  <div class="carousel-item">
-                      <div class="carousel-header">header Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                          Laudantium, eos.</div>
-                      <div class="carousel-body">
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur adipisci pariatur
-                              aperiam hic libero cum magnam praesentium error et facilis veritatis officia expedita nobis
-                              mollitia ducimus voluptatibus, sequi quod autem? Sit repellendus consectetur at? Architecto
-                              tempore error repellat dignissimos voluptate temporibus, est ad quidem nisi fugiat quam,
-                              maxime rem cumque harum mollitia qui esse reiciendis veniam eius. Consequatur quasi dolorum
-                              natus veritatis eius. Itaque cupiditate incidunt in eius eveniet repellendus perspiciatis,
-                              quia vitae quo totam explicabo officia ipsum qui dolorum magni perferendis facere earum,
-                              fugit similique quaerat quidem! Maxime consequatur quos magni, harum suscipit veniam sequi
-                              officiis aspernatur reprehenderit molestias.</p>
-                      </div>
-                      <div class="carousel-footer">footer Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                          Cumque, dolores.</div>
-                  </div>
-
-                  <div class="carousel-item">
-                    <div class="carousel-header">header Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Laudantium, eos.</div>
-                    <div class="carousel-body">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur adipisci pariatur
-                            aperiam hic libero cum magnam praesentium error et facilis veritatis officia expedita nobis
-                            mollitia ducimus voluptatibus, sequi quod autem? Sit repellendus consectetur at? Architecto
-                            tempore error repellat dignissimos voluptate temporibus, est ad quidem nisi fugiat quam,
-                            maxime rem cumque harum mollitia qui esse reiciendis veniam eius. Consequatur quasi dolorum
-                            natus veritatis eius. Itaque cupiditate incidunt in eius eveniet repellendus perspiciatis,
-                            quia vitae quo totam explicabo officia ipsum qui dolorum magni perferendis facere earum,
-                            fugit similique quaerat quidem! Maxime consequatur quos magni, harum suscipit veniam sequi
-                            officiis aspernatur reprehenderit molestias.</p>
-                    </div>
-                    <div class="carousel-footer">footer Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Cumque, dolores.</div>
+            <div class="carousel-container">
+              <div class="carousel-item">
+                <div class="carousel-header">header Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Laudantium, eos.</div>
+                <div class="carousel-body">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur adipisci pariatur
+                    aperiam hic libero cum magnam praesentium error et facilis veritatis officia expedita nobis
+                    mollitia ducimus voluptatibus, sequi quod autem? Sit repellendus consectetur at? Architecto
+                    tempore error repellat dignissimos voluptate temporibus, est ad quidem nisi fugiat quam,
+                    maxime rem cumque harum mollitia qui esse reiciendis veniam eius. Consequatur quasi dolorum
+                    natus veritatis eius. Itaque cupiditate incidunt in eius eveniet repellendus perspiciatis,
+                    quia vitae quo totam explicabo officia ipsum qui dolorum magni perferendis facere earum,
+                    fugit similique quaerat quidem! Maxime consequatur quos magni, harum suscipit veniam sequi
+                    officiis aspernatur reprehenderit molestias.</p>
                 </div>
+                <div class="carousel-footer">footer Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Cumque, dolores.</div>
+              </div>
 
-                <div class="carousel-item">
-                  <div class="carousel-header">header Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Laudantium, eos.</div>
-                  <div class="carousel-body">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur adipisci pariatur
-                          aperiam hic libero cum magnam praesentium error et facilis veritatis officia expedita nobis
-                          mollitia ducimus voluptatibus, sequi quod autem? Sit repellendus consectetur at? Architecto
-                          tempore error repellat dignissimos voluptate temporibus, est ad quidem nisi fugiat quam,
-                          maxime rem cumque harum mollitia qui esse reiciendis veniam eius. Consequatur quasi dolorum
-                          natus veritatis eius. Itaque cupiditate incidunt in eius eveniet repellendus perspiciatis,
-                          quia vitae quo totam explicabo officia ipsum qui dolorum magni perferendis facere earum,
-                          fugit similique quaerat quidem! Maxime consequatur quos magni, harum suscipit veniam sequi
-                          officiis aspernatur reprehenderit molestias.</p>
-                  </div>
-                  <div class="carousel-footer">footer Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Cumque, dolores.</div>
+              <div class="carousel-item">
+                <div class="carousel-header">header Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Laudantium, eos.</div>
+                <div class="carousel-body">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur adipisci pariatur
+                    aperiam hic libero cum magnam praesentium error et facilis veritatis officia expedita nobis
+                    mollitia ducimus voluptatibus, sequi quod autem? Sit repellendus consectetur at? Architecto
+                    tempore error repellat dignissimos voluptate temporibus, est ad quidem nisi fugiat quam,
+                    maxime rem cumque harum mollitia qui esse reiciendis veniam eius. Consequatur quasi dolorum
+                    natus veritatis eius. Itaque cupiditate incidunt in eius eveniet repellendus perspiciatis,
+                    quia vitae quo totam explicabo officia ipsum qui dolorum magni perferendis facere earum,
+                    fugit similique quaerat quidem! Maxime consequatur quos magni, harum suscipit veniam sequi
+                    officiis aspernatur reprehenderit molestias.</p>
+                </div>
+                <div class="carousel-footer">footer Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Cumque, dolores.</div>
               </div>
+
+              <div class="carousel-item">
+                <div class="carousel-header">header Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Laudantium, eos.</div>
+                <div class="carousel-body">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur adipisci pariatur
+                    aperiam hic libero cum magnam praesentium error et facilis veritatis officia expedita nobis
+                    mollitia ducimus voluptatibus, sequi quod autem? Sit repellendus consectetur at? Architecto
+                    tempore error repellat dignissimos voluptate temporibus, est ad quidem nisi fugiat quam,
+                    maxime rem cumque harum mollitia qui esse reiciendis veniam eius. Consequatur quasi dolorum
+                    natus veritatis eius. Itaque cupiditate incidunt in eius eveniet repellendus perspiciatis,
+                    quia vitae quo totam explicabo officia ipsum qui dolorum magni perferendis facere earum,
+                    fugit similique quaerat quidem! Maxime consequatur quos magni, harum suscipit veniam sequi
+                    officiis aspernatur reprehenderit molestias.</p>
+                </div>
+                <div class="carousel-footer">footer Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Cumque, dolores.</div>
               </div>
+            </div>
           </div>
+        </div>
       </div>
+
+      <div id="dropdown">
+        <h3>Dropdown</h3>
+        <p>Add dropdown by copying this code to your html document.</p>
+        <code>
+          ```<br>
+          &lt;div class="dropdown"&gt;<br>
+          &lt;h3 class="dropdown-title"&gt;Dropdown&lt;/h3&gt;<br>
+          &lt;div class="dropdown-item"&gt;<br>
+          &lt;div class="dropdown-header"&gt;dropdown header&lt;/div&gt;<br>
+          &lt;div class="dropdown-body"&gt; dropdown body&lt;/div&gt;<br>
+          &lt;/div&gt;<br>
+
+          ```
+        </code>
+        <div class="dropdown">
+          <h3 class="dropdown-title">Dropdown</h3>
+          <div class="dropdown-item">
+            <div class="dropdown-header">dropdown header</div>
+            <div class="dropdown-body"> dropdown body</div>
+          </div>
+
+          <div class="dropdown-item">
+            <div class="dropdown-header">dropdown header</div>
+            <div class="dropdown-body"> dropdown body</div>
+          </div>
+
+          <div class="dropdown-item">
+            <div class="dropdown-header">dropdown header</div>
+            <div class="dropdown-body"> dropdown body</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="float" style="padding-bottom: 1rem;">
+        <h3>Float Element</h3>
+        <p> By adding "float" to element class, this will make the element dragable around the screen.</p>
+
+        <div style="position: relative;">
+            <div class="float">THIS IS A FLOAT</div>
+        </div>
       </div>
 
       <div id="date">
         <h3>Date</h3>
         <p>Add date to your website easily with custom classes.</p>
-        <p>Start by adding "date" class for dates and "time" class for time. "date" by default gets the year-month-day and "time" by default gets hour-minute-second.</p>
+        <p>Start by adding "date" class for dates and "time" class for time. "date" by default gets the year-month-day
+          and "time" by default gets hour-minute-second.</p>
         <p>There is also time-12 which give a 12 hour format of hours</p>
         <p>Or add "year" or "month" or "day" or "month-name" or "day-name" after date.</p>
-        <span>example:</span> &lt;p class="date year"&gt;&lt;/p&gt; this will show the current year: <span class="date year"></span>.
+        <span>example:</span> &lt;p class="date year"&gt;&lt;/p&gt; this will show the current year: <span
+          class="date year"></span>.
         <p>As for time, add "hour" or "hour-12", or "minute" or "second" or "meridian" after time class.</p>
-        <span>exmple:</span> &lt;p class="time meridian"&gt;&lt;/p&gt; this will show if it is am or pm: <span class="time meridian"></span>.
+        <span>exmple:</span> &lt;p class="time meridian"&gt;&lt;/p&gt; this will show if it is am or pm: <span
+          class="time meridian"></span>.
       </div>
 
       <div id="camera">

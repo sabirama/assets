@@ -1,4 +1,4 @@
-const Camera = () => {
+const startCam = () => {
   const camContainer = document.getElementById("cam-container");
   const video = document.getElementById("video");
   const captureButton = document.getElementById("capture-btn");
@@ -59,5 +59,16 @@ const Camera = () => {
   // Add click event listener to capture button
   captureButton.addEventListener("click", capturePicture);
 };
+
+
+const Camera = document?.getElementById('cam-start')?.addEventListener("click", ()=> {
+  const camContainer = document.getElementById('cam-container');
+  camContainer.innerHTML = ` 
+      <video id="video" width="640" height="480" autoplay></video>
+      <button id="capture-btn">Capture</button>
+      <canvas id="img-canvas"></canvas>
+  `
+  startCam();
+});
 
 export default Camera;
