@@ -73,7 +73,6 @@ const Camera = document
     startCam();
   });
 
-
 // Carosuel
 const rootStyles = getComputedStyle(document.documentElement);
 const carousel = document.querySelectorAll(".carousel");
@@ -112,126 +111,123 @@ const Carousel = carousel.forEach((carousel) => {
   });
 });
 
-
-
 // Date
 
 const DateTime = setInterval(() => {
-    const newDate = new Date();
-  
-    const year = newDate.getFullYear();
-    const month = newDate.getMonth();
-    const day = newDate.getDate();
-    const newDay = newDate.getDay();
-  
-    const fullDate = document.querySelectorAll(".date");
-    const years = document.querySelectorAll(".date.year");
-    const months = document.querySelectorAll(".date.month");
-    const monthsName = document.querySelectorAll(".date.month-name");
-    const days = document.querySelectorAll(".date.day");
-    const daysName = document.querySelectorAll(".date.day-name");
-  
-    const hour = newDate.getHours();
-    const minute = newDate.getMinutes();
-    const second = newDate.getSeconds();
-  
-    const fullTime = document.querySelectorAll(".time");
-    const fullTime12 = document.querySelectorAll(".time-12");
-    const hours = document.querySelectorAll(".time.hour");
-    const hours12format = document.querySelectorAll(".time.hour-12");
-    const minutes = document.querySelectorAll(".time.minute");
-    const seconds = document.querySelectorAll(".time.second");
-    const meridian = document.querySelectorAll(".time.meridian");
-  
-    const monthNames = [
-      "JANUARY",
-      "FEBRUARY",
-      "MARCH",
-      "APRIL",
-      "MAY",
-      "JUNE",
-      "JULY",
-      "AUGUST",
-      "SEPTEMBER",
-      "OCTOBER",
-      "NOVERMBER",
-      "DECEMBER",
-    ];
-  
-    const dayNames = [
-      "SUNDAY",
-      "MONDAY",
-      "TEUSDAY",
-      "WEDNESDAY",
-      "THURSDAY",
-      "FRIDAY",
-      "SATURDAY",
-    ];
-  
-    fullDate.forEach((element) => {
-      const trueMonth = month + 1;
-      element.innerHTML = `${year}-${
-        trueMonth < 10 ? "0" + trueMonth : trueMonth
-      }-${day < 10 ? "0" + day : day}`;
-    });
-  
-    fullTime.forEach((element) => {
-      element.innerHTML = `${hour < 10 ? "0" + hour : hour}-${
-        minute < 10 ? "0" + minute : minute
-      }-${second < 10 ? "0" + second : second}`;
-    });
-  
-    fullTime12.forEach((element) => {
-      const trueHour = hour > 12 ? hour - 12 : hour;
-      element.innerHTML = `${trueHour < 10 ? "0" + trueHour : trueHour}-${
-        minute < 10 ? "0" + minute : minute
-      }-${second < 10 ? "0" + second : second} ${hour > 12 ? "PM" : "AM"}`;
-    });
-  
-    years.forEach((element) => {
-      element.innerHTML = year;
-    });
-  
-    months.forEach((element) => {
-      element.innerHTML = month + 1 < 10 ? "0" + month : month;
-    });
-  
-    monthsName.forEach((element) => {
-      element.innerHTML = monthNames[month];
-    });
-  
-    days.forEach((element) => {
-      element.innerHTML = day < 10 ? "0" + day : day;
-    });
-  
-    daysName.forEach((element) => {
-      element.innerHTML = dayNames[newDay];
-    });
-  
-    hours.forEach((element) => {
-      element.innerHTML = hour < 10 ? "0" + hour : hour;
-    });
-  
-    hours12format.forEach((element) => {
-      const hour12 = hour > 12 ? hour - 12 : hour;
-      element.innerHTML = hour12 < 10 ? "0" + hour12 : hour12;
-    });
-  
-    minutes.forEach((element) => {
-      element.innerHTML = minute;
-    });
-  
-    seconds.forEach((element) => {
-      element.innerHTML = second;
-    });
-  
-    meridian.forEach((element) => {
-      element.innerHTML = hour > 12 ? "PM" : "AM";
-    });
-  }, 1000);
+  const newDate = new Date();
 
+  const year = newDate.getFullYear();
+  const month = newDate.getMonth();
+  const day = newDate.getDate();
+  const newDay = newDate.getDay();
 
-//DropDown 
+  const fullDate = document.querySelectorAll(".date");
+  const years = document.querySelectorAll(".date.year");
+  const months = document.querySelectorAll(".date.month");
+  const monthsName = document.querySelectorAll(".date.month-name");
+  const days = document.querySelectorAll(".date.day");
+  const daysName = document.querySelectorAll(".date.day-name");
+
+  const hour = newDate.getHours();
+  const minute = newDate.getMinutes();
+  const second = newDate.getSeconds();
+
+  const fullTime = document.querySelectorAll(".time");
+  const fullTime12 = document.querySelectorAll(".time-12");
+  const hours = document.querySelectorAll(".time.hour");
+  const hours12format = document.querySelectorAll(".time.hour-12");
+  const minutes = document.querySelectorAll(".time.minute");
+  const seconds = document.querySelectorAll(".time.second");
+  const meridian = document.querySelectorAll(".time.meridian");
+
+  const monthNames = [
+    "JANUARY",
+    "FEBRUARY",
+    "MARCH",
+    "APRIL",
+    "MAY",
+    "JUNE",
+    "JULY",
+    "AUGUST",
+    "SEPTEMBER",
+    "OCTOBER",
+    "NOVERMBER",
+    "DECEMBER",
+  ];
+
+  const dayNames = [
+    "SUNDAY",
+    "MONDAY",
+    "TEUSDAY",
+    "WEDNESDAY",
+    "THURSDAY",
+    "FRIDAY",
+    "SATURDAY",
+  ];
+
+  fullDate.forEach((element) => {
+    const trueMonth = month + 1;
+    element.innerHTML = `${year}-${
+      trueMonth < 10 ? "0" + trueMonth : trueMonth
+    }-${day < 10 ? "0" + day : day}`;
+  });
+
+  fullTime.forEach((element) => {
+    element.innerHTML = `${hour < 10 ? "0" + hour : hour}-${
+      minute < 10 ? "0" + minute : minute
+    }-${second < 10 ? "0" + second : second}`;
+  });
+
+  fullTime12.forEach((element) => {
+    const trueHour = hour > 12 ? hour - 12 : hour;
+    element.innerHTML = `${trueHour < 10 ? "0" + trueHour : trueHour}-${
+      minute < 10 ? "0" + minute : minute
+    }-${second < 10 ? "0" + second : second} ${hour > 12 ? "PM" : "AM"}`;
+  });
+
+  years.forEach((element) => {
+    element.innerHTML = year;
+  });
+
+  months.forEach((element) => {
+    element.innerHTML = month + 1 < 10 ? "0" + month : month;
+  });
+
+  monthsName.forEach((element) => {
+    element.innerHTML = monthNames[month];
+  });
+
+  days.forEach((element) => {
+    element.innerHTML = day < 10 ? "0" + day : day;
+  });
+
+  daysName.forEach((element) => {
+    element.innerHTML = dayNames[newDay];
+  });
+
+  hours.forEach((element) => {
+    element.innerHTML = hour < 10 ? "0" + hour : hour;
+  });
+
+  hours12format.forEach((element) => {
+    const hour12 = hour > 12 ? hour - 12 : hour;
+    element.innerHTML = hour12 < 10 ? "0" + hour12 : hour12;
+  });
+
+  minutes.forEach((element) => {
+    element.innerHTML = minute;
+  });
+
+  seconds.forEach((element) => {
+    element.innerHTML = second;
+  });
+
+  meridian.forEach((element) => {
+    element.innerHTML = hour > 12 ? "PM" : "AM";
+  });
+}, 1000);
+
+//DropDown
 const dropdown = document.querySelectorAll(".dropdown");
 
 const MultiDropDown = dropdown.forEach((component) => {
@@ -247,120 +243,134 @@ const MultiDropDown = dropdown.forEach((component) => {
     item.addEventListener("click", () => {
       if (open === true) {
         body.style.maxHeight = "0px";
-        body.style.padding = "0rem 1rem"
+        body.style.padding = "0rem 1rem";
         open = false;
       } else {
         body.style.maxHeight = `${body.scrollHeight + 100}px`;
-        body.style.padding ="1rem";
+        body.style.padding = "1rem";
         open = true;
       }
-      console.log()
+      console.log();
     });
   });
 });
 
-
 //Float Element
 
 const floatItem = () => {
-    const floater = document.querySelectorAll(".float");
-  
-    floater.forEach((item) => {
-      var offsetX, offsetY;
-      var isDragging = false;
-  
-      item.addEventListener("mousedown", function (e) {
+  const floater = document.querySelectorAll(".float");
+
+  floater.forEach((item) => {
+    var offsetX, offsetY;
+    var isDragging = false;
+
+    item.addEventListener("mousedown", function (e) {
+      isDragging = true;
+      offsetX = e.clientX - item.getBoundingClientRect().left;
+      offsetY = e.clientY - item.getBoundingClientRect().top;
+
+      item.style.cursor = "default";
+      // Set position to fixed to be able to control the element postion around;
+      item.style.position = "fixed";
+      // Set user-select to none to prevent text selection during dragging
+      item.style.userSelect = "none";
+      // Bring the element to the front
+      item.style.zIndex = 9999;
+    });
+
+    item.addEventListener(
+      "touchstart",
+      function (e) {
         isDragging = true;
-        offsetX = e.clientX - item.getBoundingClientRect().left;
-        offsetY = e.clientY - item.getBoundingClientRect().top;
-  
+        var touch = e.touches[0];
+        offsetX = touch.clientX - item.getBoundingClientRect().left;
+        offsetY = touch.clientY - item.getBoundingClientRect().top;
+
         item.style.cursor = "default";
-        // Set position to fixed to be able to control the element postion around;
+        // Set position to fixed to be able to control the element position around;
         item.style.position = "fixed";
         // Set user-select to none to prevent text selection during dragging
         item.style.userSelect = "none";
         // Bring the element to the front
         item.style.zIndex = 9999;
-      });
-  
-      item.addEventListener('touchstart', function(e) {
-          isDragging = true;
-          var touch = e.touches[0];
-          offsetX = touch.clientX - item.getBoundingClientRect().left;
-          offsetY = touch.clientY - item.getBoundingClientRect().top;
-      
-          item.style.cursor = "default";
-          // Set position to fixed to be able to control the element position around;
-          item.style.position = "fixed";
-          // Set user-select to none to prevent text selection during dragging
-          item.style.userSelect = 'none';
-          // Bring the element to the front
-          item.style.zIndex = 9999;
-      }, {passive : true}); // Add { passive: true } to make the listener passive
-  
-      document.addEventListener("mousemove", function (e) {
+      },
+      { passive: true }
+    ); // Add { passive: true } to make the listener passive
+
+    document.addEventListener("mousemove", function (e) {
+      if (isDragging) {
+        // Calculate new position
+        var newX = e.clientX - offsetX;
+        var newY = e.clientY - offsetY;
+
+        // Ensure the element stays within the viewport
+        var maxX = window.innerWidth - item.offsetWidth;
+        var maxY = window.innerHeight - item.offsetHeight;
+        newX = Math.min(Math.max(0, newX), maxX);
+        newY = Math.min(Math.max(0, newY), maxY);
+
+        // Apply new position
+        item.style.left = newX + "px";
+        item.style.top = newY + "px";
+      }
+    });
+
+    document.addEventListener(
+      "touchmove",
+      function (e) {
         if (isDragging) {
+          // Prevent default touch behavior (scrolling, zooming)
+          e.preventDefault();
+
+          // Get the first touch (assuming single touch)
+          var touch = e.touches[0];
+
           // Calculate new position
-          var newX = e.clientX - offsetX;
-          var newY = e.clientY - offsetY;
-  
+          var newX = touch.clientX - offsetX;
+          var newY = touch.clientY - offsetY;
+
           // Ensure the element stays within the viewport
           var maxX = window.innerWidth - item.offsetWidth;
           var maxY = window.innerHeight - item.offsetHeight;
           newX = Math.min(Math.max(0, newX), maxX);
           newY = Math.min(Math.max(0, newY), maxY);
-  
+
           // Apply new position
           item.style.left = newX + "px";
           item.style.top = newY + "px";
         }
-      });
-  
-      document.addEventListener("touchmove", function (e) {
-          if (isDragging) {
-              // Prevent default touch behavior (scrolling, zooming)
-              e.preventDefault();
-      
-              // Get the first touch (assuming single touch)
-              var touch = e.touches[0];
-              
-              // Calculate new position
-              var newX = touch.clientX - offsetX;
-              var newY = touch.clientY - offsetY;
-      
-              // Ensure the element stays within the viewport
-              var maxX = window.innerWidth - item.offsetWidth;
-              var maxY = window.innerHeight - item.offsetHeight;
-              newX = Math.min(Math.max(0, newX), maxX);
-              newY = Math.min(Math.max(0, newY), maxY);
-      
-              // Apply new position
-              item.style.left = newX + "px";
-              item.style.top = newY + "px";
-          }
-      }, { passive: false }); 
-  
-      document.addEventListener("mouseup", function () {
-        if (isDragging) {
-          isDragging = false;
-          // Restore user-select and z-index
-          item.style.userSelect = "auto";
-          item.style.zIndex = "";
-        }
-      });
-  
-      document.addEventListener("touchend", function () {
-        if (isDragging) {
-          isDragging = false;
-          // Restore user-select and z-index
-          item.style.userSelect = "auto";
-          item.style.zIndex = "";
-        }
+      },
+      { passive: false }
+    );
+
+    document.addEventListener("mouseup", function () {
+      if (isDragging) {
+        isDragging = false;
+        // Restore user-select and z-index
+        item.style.userSelect = "auto";
+        item.style.zIndex = "";
+      }
     });
+
+    document.addEventListener("touchend", function () {
+      if (isDragging) {
+        isDragging = false;
+        // Restore user-select and z-index
+        item.style.userSelect = "auto";
+        item.style.zIndex = "";
+      }
     });
-  };
-  
-  const Floater = document.addEventListener("DOMContentLoaded", () => {
-    floatItem();
   });
-  
+};
+
+const Floater = document.addEventListener("DOMContentLoaded", () => {
+  floatItem();
+});
+
+
+// Run the necessary scripts
+Carousel;
+MultiDropDown;
+DateTime;
+Camera;
+Floater;
