@@ -61,7 +61,7 @@ const startCam = () => {
   captureButton.addEventListener("click", capturePicture);
 };
 
-const Camera = document
+export const Camera = document
   ?.getElementById("cam-start")
   ?.addEventListener("click", () => {
     const camContainer = document.getElementById("cam-container");
@@ -79,7 +79,7 @@ const carousel = document.querySelectorAll(".carousel");
 
 const padding = 32;
 
-const Carousel = carousel.forEach((carousel) => {
+export const Carousel = carousel.forEach((carousel) => {
   const carouselContent = carousel.querySelectorAll(".carousel-content");
 
   carouselContent.forEach((carouselContent) => {
@@ -113,7 +113,7 @@ const Carousel = carousel.forEach((carousel) => {
 
 // Date
 
-const DateTime = setInterval(() => {
+export const DateTime = setInterval(() => {
   const newDate = new Date();
 
   const year = newDate.getFullYear();
@@ -230,7 +230,7 @@ const DateTime = setInterval(() => {
 //DropDown
 const dropdown = document.querySelectorAll(".dropdown");
 
-const MultiDropDown = dropdown.forEach((component) => {
+export const MultiDropDown = dropdown.forEach((component) => {
   const dropItem = component.querySelectorAll(".dropdown-item");
 
   dropItem.forEach((item) => {
@@ -363,14 +363,16 @@ const floatItem = () => {
   });
 };
 
-const Floater = document.addEventListener("DOMContentLoaded", () => {
+export const Floater = document.addEventListener("DOMContentLoaded", () => {
   floatItem();
 });
 
 
 // Run the necessary scripts
-Carousel;
-MultiDropDown;
-DateTime;
-Camera;
-Floater;
+export default {
+  Carousel,
+  MultiDropDown,
+  DateTime,
+  Camera,
+  Floater, 
+}
