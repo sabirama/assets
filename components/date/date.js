@@ -58,16 +58,16 @@ const DateTime = setInterval(() => {
   });
 
   fullTime.forEach((element) => {
-    element.innerHTML = `${hour < 10 ? "0" + hour : hour}-${
+    element.innerHTML = `${hour < 10 ? "0" + hour : hour} : ${
       minute < 10 ? "0" + minute : minute
-    }-${second < 10 ? "0" + second : second}`;
+    } : ${second < 10 ? "0" + second : second}`;
   });
 
   fullTime12.forEach((element) => {
     const trueHour = hour > 12 ? hour - 12 : hour;
-    element.innerHTML = `${trueHour < 10 ? "0" + trueHour : trueHour}-${
+    element.innerHTML = `${trueHour < 10 ? "0" + trueHour : trueHour} : ${
       minute < 10 ? "0" + minute : minute
-    }-${second < 10 ? "0" + second : second} ${hour > 12 ? "PM" : "AM"}`;
+    } : ${second < 10 ? "0" + second : second} ${hour > 12 ? "PM" : "AM"}`;
   });
 
   years.forEach((element) => {
